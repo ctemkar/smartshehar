@@ -1,0 +1,73 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    useLibrary 'org.apache.http.legacy'
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    signingConfigs {
+        debug {
+            storeFile file('./debug.keystore')
+        }
+    }
+
+    repositories {
+        mavenCentral();
+        maven {
+            url "https://repo.commonsware.com.s3.amazonaws.com"
+        }
+    }
+    defaultConfig {
+        applicationId "com.smartshehar.dashboard.app"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 53
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "default"
+    productFlavors {
+        alpha {
+            applicationId "com.smartshehar.dashboard.app.alpha"
+            resValue "string", "google_maps_api_key", "AIzaSyDTVmbBaztRREPU7JlXY1nbN0zPQZJf29U"
+            resValue "string", "app_name", "α SmartShehar"
+            versionName "1.07.70 alpha"
+        }
+        rel {
+            applicationId "com.smartshehar.dashboard.app"
+            resValue "string", "google_maps_api_key", "AIzaSyDTVmbBaztRREPU7JlXY1nbN0zPQZJf29U"
+            resValue "string", "app_name", "SmartShehar"
+            versionName "1.07.72"
+        }
+    }
+
+}
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'junit:junit:4.12'
+    api 'org.twitter4j:twitter4j-core:4.0.7'
+    api 'com.facebook.android:facebook-android-sdk:4.36.0'
+    api project(':smartsheharlib')
+    api 'com.google.android.gms:play-services-analytics:16.0.3'
+    api 'com.google.firebase:firebase-appindexing:16.0.1'
+    api 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+    api 'com.roughike:bottom-bar:1.3.3'
+}

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llGovernance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/internetErr"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/governance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/dashboard_yellow"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/governance"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:contentDescription="@string/arrow_red"
+            android:src="@mipmap/ic_arrow_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/help_your_city"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/governanceTools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTrafficSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/thin_frame"
+            android:onClick="clickTrafficSite">
+
+            <LinearLayout
+                android:id="@+id/llTrafficIssue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivTraffic"
+                    style="@style/SSDMedImageView"
+                    android:contentDescription="@string/descJijo"
+                    android:src="@mipmap/ic_traffic_db" />
+
+                <TextView
+                    android:id="@+id/tvTraffic"
+                    style="@style/TextView"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/traffic_violation" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTTIssue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/llTrafficIssue"
+                android:layout_toRightOf="@+id/llTrafficIssue"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtNTIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTTIssue"
+                android:layout_toEndOf="@+id/llTrafficIssue"
+                android:layout_toRightOf="@+id/llTrafficIssue"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:onClick="clickTrafficViolation"
+                >
+
+                <ImageView
+                    android:id="@+id/fabTraffic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ripple_oval"
+                    android:src="@mipmap/ic_plus"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fabTraffic"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/add_issue"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp"
+                 />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlMunicipalSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/thin_frame"
+            android:onClick="clickMunicipalSite"
+            >
+
+            <LinearLayout
+                android:id="@+id/llMunicipalIssue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivMunicipal"
+                    style="@style/SSDMedImageView"
+                    android:contentDescription="@string/municipal"
+                    android:src="@mipmap/ic_municipal_db" />
+
+                <TextView
+                    android:id="@+id/txtMunicipal"
+                    style="@style/TextView"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/municipal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTMIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@+id/llMunicipalIssue"
+                android:layout_toRightOf="@+id/llMunicipalIssue"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtNMIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTMIssues"
+                android:layout_toEndOf="@+id/llMunicipalIssue"
+                android:layout_toRightOf="@+id/llMunicipalIssue"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:onClick="clickMunicipal"
+                >
+
+                <ImageView
+                    android:id="@+id/fabMunicipal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ripple_oval"
+                    android:src="@mipmap/ic_plus" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fabMunicipal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/add_issue"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/thin_frame">
+
+            <LinearLayout
+                android:id="@+id/llDashboard"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivMap"
+                    style="@style/SSDMedImageView"
+                    android:contentDescription="@string/dashboard"
+                    android:src="@mipmap/ic_map_db" />
+
+                <TextView
+                    android:id="@+id/txtMap"
+                    style="@style/TextView"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/dashboard" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTOIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@+id/llDashboard"
+                android:layout_toRightOf="@+id/llDashboard"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtNOIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTOIssues"
+                android:layout_toEndOf="@+id/llDashboard"
+                android:layout_toRightOf="@+id/llDashboard"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlComplaintList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/thin_frame">
+
+            <LinearLayout
+                android:id="@+id/llComplaintList"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgComplaintList"
+                    style="@style/SSDMedImageView"
+                    android:contentDescription="@string/menuMyComplaints"
+                    android:src="@mipmap/ic_my_issues_db" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/menuMyComplaints" />
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/txtMyTIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@+id/llComplaintList"
+                android:layout_toRightOf="@+id/llComplaintList"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtMyNIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMyTIssues"
+                android:layout_toEndOf="@+id/llComplaintList"
+                android:layout_toRightOf="@+id/llComplaintList"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

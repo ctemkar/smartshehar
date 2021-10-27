@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlTripActive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnPause"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow"
+            android:text="@string/pause" />
+
+        <Button
+            android:id="@+id/btnResume"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:text="@string/resume" />
+
+        <Button
+            android:id="@+id/btnEndTrip"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnResume"
+            android:background="@drawable/btn_red"
+            android:text="@string/endTrip" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlScheduledTrip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnStartNow"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:text="@string/startNow" />
+
+        <Button
+            android:id="@+id/btnCancelTrip"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnStartNow"
+            android:background="@drawable/btn_red"
+            android:text="@string/cancelTrip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

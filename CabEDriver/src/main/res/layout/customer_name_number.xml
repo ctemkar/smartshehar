@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:gravity="bottom">
+
+        <EditText
+            android:id="@+id/cleCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_customer_name"
+            android:padding="5dp"
+            android:textColor="@color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:gravity="bottom">
+
+        <EditText
+            android:id="@+id/cleCustomerNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_customer_number"
+            android:padding="5dp"
+            android:textColor="@color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSaveCustomer"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_border"
+            android:gravity="center"
+            android:text="@string/customer_save"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvSkipCustomer"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_border"
+            android:gravity="center"
+            android:text="@string/customer_skip"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

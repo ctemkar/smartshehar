@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@mipmap/ic_share_white"
+        android:orderInCategory="1"
+        android:title="@string/share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_refreshGps"
+        android:icon="@mipmap/ic_gps_white"
+        android:orderInCategory="2"
+        android:title="@string/refreshLocation"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_notification"
+        android:icon="@mipmap/ic_notification"
+        android:title="Notification"
+        app:showAsAction="never"
+     />
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="@string/menu_refresh"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+</menu>

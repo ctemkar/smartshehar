@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llStationRow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/BackgroundLight">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/traintime"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:textAppearance="@style/colorRowBold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/indicatorspeed"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textAppearance="@style/colorRowBold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/station"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:textAppearance="@style/colorRowBold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/platformno"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:textAppearance="@style/colorRow"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/platformside"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:textAppearance="@style/colorRow"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/splcode"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/colorRowBold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/linecode"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textAppearance="@style/colorRowBold"
+            android:textSize="12dp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llJourney"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/hdr"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_busno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/BackgroundLight"
+                android:dropDownWidth="260dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/busNoHint"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxWidth="210dip"
+                android:minWidth="210dip"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/btnClear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="2dp"
+                android:padding="2dp"
+                android:src="@mipmap/ic_clear"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/radioDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioDn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tblJourney"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+
+</LinearLayout>
+
+	
+
+

@@ -1,0 +1,282 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llPersonal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAdd"
+        style="@style/driverProfile"
+        android:hint="@string/getting_address"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/driverProfile"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNameFirst"
+            style="@style/driverProfile"
+            android:hint="@string/name_first"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="text"></EditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNameLast"
+            style="@style/driverProfile"
+            android:hint="@string/name_last"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/tvAge"
+            style="@style/driverProfile"
+            android:drawableRight="@mipmap/ic_calendar"
+            android:drawableLeft="@mipmap/ic_star"
+            android:hint="@string/age" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/temp_add"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTempAddrOne"
+            style="@style/driverProfile"
+            android:hint="@string/add_one"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTempAddrTwo"
+            style="@style/driverProfile"
+            android:hint="@string/add_two"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTempCity"
+            style="@style/driverProfile"
+            android:hint="@string/city_town"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTempState"
+            style="@style/driverProfile"
+            android:hint="@string/state"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTempPincode"
+            style="@style/driverProfile"
+            android:hint="@string/pincode"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTempLandmark"
+            style="@style/driverProfile"
+            android:hint="@string/landmark"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/chkAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/same_address"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/per_add"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPerAddrOne"
+            style="@style/driverProfile"
+            android:hint="@string/add_one"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPerAddrTwo"
+            style="@style/driverProfile"
+            android:hint="@string/add_two"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPerCity"
+            style="@style/driverProfile"
+            android:drawableLeft="@mipmap/ic_star"
+            android:hint="@string/city_town"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPerState"
+            android:drawableLeft="@mipmap/ic_star"
+            style="@style/driverProfile"
+            android:hint="@string/state"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPerPincode"
+            style="@style/driverProfile"
+            android:hint="@string/pincode"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPerLandmark"
+            style="@style/driverProfile"
+            android:drawableLeft="@mipmap/ic_star"
+            android:hint="@string/landmark"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/gender"
+        android:drawableLeft="@mipmap/ic_star"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPhoneNo"
+            android:drawableLeft="@mipmap/ic_star"
+            style="@style/driverProfile"
+            android:hint="@string/driver_phone_no"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etDriverEmailid"
+            style="@style/driverProfile"
+            android:hint="@string/driver_email_id"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etVehicleNo"
+            style="@style/driverProfile"
+            android:hint="@string/vehicl_no"
+            android:inputType="text"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

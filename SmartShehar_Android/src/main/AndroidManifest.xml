@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartshehar.dashboard.app"
+    android:installLocation="auto">
+
+    <uses-sdk tools:overrideLibrary="com.commonsware.cwac.cam2, com.github.clans.fab" />
+
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:required="false" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED"
+        android:required="false" />
+
+    <permission
+        android:name="${packageName}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"
+        android:required="false" />
+
+    <uses-permission
+        android:name="${packageName}.permission.C2D_MESSAGE"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        android:required="false" />
+
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="@string/google_maps_api_key" />
+
+    <application
+        android:name=".SSApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:exported="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity
+            android:name=".ui.SmartShehar_SplashsScreen_act"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lib.app.util.ui.ActFeedback"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.MunicipalViolation_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/municipal_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.App.Base" />
+
+        <service
+            android:name="lib.app.util.FetchAddressIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name="lib.app.util.SearchAddress_act"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="lib.app.util.ui.CameraActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="lib.app.util.ui.GalleryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="lib.app.util.ui.VerifyPhone_act"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MyComplaintList"
+            android:label="@string/title_activity_card_view"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TrafficViolation_act"
+            android:label="@string/traffic_violation_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.App.Base" />
+        <activity
+            android:name=".ui.FullMapShowTrainBus_act"
+            android:label="@string/fullmapshowtrainbus"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SmartShehar_Dashboard_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/smartshehar">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="www.smartshehar.com"
+                    android:pathPrefix="/"
+                    android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+                <!-- Accepts URIs that begin with "example://gizmos” -->
+                <!--
+            <data android:scheme="example"
+                android:host="gizmos" />
+                -->
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Act_SafetyShield_Dashboard"
+            android:label="Safety Shield"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="lib.app.util.ui.ActFeedback"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".ui.Activity_BeSafe_Emergency"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActSoundAlarm"
+            android:label="Sound Alarm"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Act_WalkWithMe"
+            android:label="Walk with Me"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Hospital"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Activity_Settings"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".example.android.apis.appwidget.ExampleAppWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Bus App -->
+
+        <activity
+            android:name="in.bestbus.app.ui.ActFindBus"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.bestbus.app.ui.ActBusRoute"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.bestbus.app.ui.ActSearchBus"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppFullScreenTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.bestbus.app.ui.ActSearchNearStop"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/home_findbus"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.bestbus.app.ui.ActBusJourney"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_busno"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.bestbus.app.ui.ActBusTrip"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_bustrip"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.bestbus.app.ui.ActBusMain"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.bestbus.app.ui.ActLogBus"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="in.bestbus.app.ui.ActWalkToStop"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="in.bestbus.app.ui.ActBusRouteMap"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="in.bestbus.app.ui.ActNearStopsMap"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="in.bestbus.app.ui.ActSearchStop"
+            android:label="@string/home_findbus"
+            android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <!-- Bus App -->
+
+        <service
+            android:name=".SendDraftDataService"
+            android:enabled="true" />
+        <service android:name=".LocationService" />
+        <service android:name=".LocationService_AutoTaxi" />
+
+        <receiver
+            android:name=".example.android.apis.appwidget.ExampleBroadcastReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.ACTION_TIMEZONE_CHANGED" />
+                <action android:name="android.intent.ACTION_TIME" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".PowerButtonReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDTVmbBaztRREPU7JlXY1nbN0zPQZJf29U" />
+
+        <receiver android:name=".example.android.apis.appwidget.SAppWidgetProvider">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:icon="@+id/emergency"
+                android:resource="@xml/appwidget_provider"
+                android:widgetCategory="keyguard|home_screen" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.ActAutoTaxiDashboard"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Auto Taxi" />
+        <activity
+            android:name=".ui.ActMeter"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".ui.ActEstimatedCost"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".ui.ActTripSummary"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <receiver android:name="lib.app.util.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.ActFareCalculator"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".ui.ActUserRegistration"
+            android:label="@string/title_activity_user_registration"
+            android:theme="@style/Theme.Registration" />
+
+        <service
+            android:name=".PowerButtonService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".BootUpReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".ui.ActNotification"
+            android:label="@string/title_activity_act_notification" />
+
+
+        <service
+            android:name=".GcmIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.ActFollowupForm"
+            android:label="@string/title_activity_act_followup_form"
+            android:theme="@style/Theme.App.Base" />
+
+        <!--
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.smartshehar.dashboard.app" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.smartshehar.dashboard.app" />
+            </intent-filter>
+        </receiver>
+        -
+        <service
+            android:name=".GcmIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.smartshehar.chat.gcm.MyGCMPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service android:name=".RegistrationIntentService" />
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="${packageName}" />
+            </intent-filter>
+        </receiver>
+        <!-- train app activities -->
+
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActTrainDashboard"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_act_train_dashboard" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActTrainMap"
+            android:label="@string/title_activity_act_train_map" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActFares"
+            android:label="@string/title_activity_act_fares" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActFastInfo"
+            android:label="@string/title_activity_act_fast_info" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActTrainTrip"
+            android:label="@string/title_activity_act_train_trip" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActTrainRoute"
+            android:label="@string/title_activity_act_train_route" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActSendSMS"
+            android:label="@string/title_activity_act_send_sms" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActPref"
+            android:label="@string/title_activity_act_pref" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActMegBlock"
+            android:label="@string/title_activity_act_meg_block"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.ActMegaBlockMoreDetail"
+            android:label="@string/title_activity_act_mega_block_more_detail" />
+        <activity
+            android:name="com.smartshehar.android.app.ui.SearchStationActivity"
+            android:label="@string/title_activity_search_station"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.ActIpComments"
+            android:theme="@style/Theme.App.Base" />
+        <activity android:name=".ui.ActMunicipalCategorySelection" />
+        <activity android:name=".ui.ActTrafficCategorySelection" />
+        <activity
+            android:name=".ui.ActVerifyNumber"
+            android:label="@string/title_activity_act_verify_number"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.ActDashboardReport"
+            android:label="@string/title_activity_act_dashboard_report"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.smartshehar.chat.ChatRoomActivity"
+            android:label="@string/title_activity_chat_room_discussion"
+            android:parentActivityName="com.smartshehar.chat.ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smartshehar.chat.ChatActivity" />
+        </activity>
+        <activity
+            android:name="com.smartshehar.chat.ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.smartshehar.chat.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name=".ui.ViewIssueOnMapAct"
+            android:label="@string/title_activity_view_issue_on_map" />
+        <activity
+            android:name=".ui.ActListOfNearByIssues"
+            android:label="@string/title_activity_act_list_of_issuse" />
+        <activity android:name=".ui.ActIssueFilter" />
+        <activity
+            android:name=".ui.Facebook_act"
+            android:icon="@mipmap/ic_facebook"
+            android:label="Facebook"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.Twitter_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:icon="@mipmap/ic_twitter"
+            android:label="Twitter"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.TwitterHomePage_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/analytics_global_config" />
+
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+    </application>
+
+</manifest>

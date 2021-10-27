@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#127ee8"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/unknownPerson"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvPhoneNo"
+        style="@style/CustomerItem"
+        android:layout_below="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvCompany"
+        style="@style/CustomerItem"
+        android:layout_below="@+id/tvPhoneNo" />
+
+    <LinearLayout
+        android:id="@+id/llFlatFloorWing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCompany"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvFlatFloorWing"
+            style="@style/CustomerItem" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvComplex"
+        style="@style/CustomerItem"
+        android:layout_below="@+id/llFlatFloorWing" />
+
+    <TextView
+        android:id="@+id/tvRoad"
+        style="@style/CustomerItem"
+        android:layout_below="@+id/tvComplex" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        style="@style/CustomerItem"
+        android:layout_below="@+id/tvRoad" />
+
+    <TextView
+        android:id="@+id/tvLandmark1"
+        style="@style/CustomerItem"
+        android:layout_below="@+id/tvArea" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tIlOrderAmount"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvLandmark1">
+
+        <lib.app.util.ClearableEditText
+            android:id="@+id/etOrderAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/orderAmount"
+            android:inputType="number"
+            android:textColor="@color/black" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_below="@id/tIlOrderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickOk"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ok" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="?android:attr/dividerVertical" />
+        <RelativeLayout
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/btnIgnore"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickIgnore"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone"
+                android:text="@string/ignore" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnIgnore"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="clickDelete"
+                android:visibility="gone"
+                android:text="@string/delete" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnDelete"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="clickEdit" android:visibility="gone"
+                android:text="@string/edit" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnEdit"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="clickOk" android:visibility="gone"
+                android:text="@string/ok" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+

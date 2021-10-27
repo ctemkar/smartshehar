@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_locate"
+        android:icon="@mipmap/ic_gps_white"
+        android:orderInCategory="1"
+        android:title="@string/refreshLocation"
+        yourapp:showAsAction="always|collapseActionView" />
+
+</menu>

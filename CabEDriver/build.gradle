@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 51
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../debug.keystore')
+        }
+    }
+    flavorDimensions "default"
+    productFlavors {
+        alpha {
+            applicationId "com.smartshehar.cabe.driver.alpha"
+            resValue "string", "google_maps_api_key", "AIzaSyDcluE1eOeNilJfDLrgvWL2BRS35aOr0eg"
+            resValue "string", "app_name", "α Cab-e Manager"
+            versionName "1.04.54"
+            archivesBaseName = "Cab-e Manager-$versionName"
+        }
+        rel {
+            applicationId "com.smartshehar.cabe.driver"
+            resValue "string", "google_maps_api_key", "AIzaSyDcluE1eOeNilJfDLrgvWL2BRS35aOr0eg"
+            resValue "string", "app_name", "Cab-e Manager"
+            versionName "1.04.54"
+            archivesBaseName = "Cab-e Manager-$versionName"
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':smartsheharlib')
+    api 'com.facebook.android:facebook-android-sdk:4.1.0'
+    api 'com.github.rahatarmanahmed:circularprogressview:2.4.0'
+    api 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    api 'com.googlecode.libphonenumber:libphonenumber:7.1.1'
+    api 'com.android.support:multidex:1.0.3'
+}
+

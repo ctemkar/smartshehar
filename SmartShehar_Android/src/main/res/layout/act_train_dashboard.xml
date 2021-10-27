@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="1dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/fastinfo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_fastinfo"
+                android:text="@string/home_fastinfo" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/home_fastinfo"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/route"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_route"
+                android:text="@string/home_route" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/home_route"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/railmap"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_rail_map"
+                android:text="@string/home_railmap" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/home_railmap"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trainfares"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_train_fares"
+                android:text="@string/home_fares" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/home_fares"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/megablock"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_repair"
+                android:text="@string/home_megablock" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/home_megablock"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preferences"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_train_setting"
+                android:text="@string/home_settings" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/home_settings"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_feedback"
+                android:text="@string/feedback1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/feedback1"
+                android:textColor="@color/actionbar_title_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/setuphomework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setuphomework" />
+
+        <LinearLayout
+            android:id="@+id/llWork"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/btnWork"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:contentDescription="@string/Work"
+                android:src="@mipmap/ic_office" />
+
+            <HorizontalScrollView
+                android:id="@+id/hsvWork"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:paddingLeft="4dp"
+                    android:text="@string/Work"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHome"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:contentDescription="@string/Home"
+                android:src="@mipmap/ic_home" />
+
+            <HorizontalScrollView
+                android:id="@+id/hsvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:text="@string/Home"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMegaBlock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_salmon"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/nomegablock"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="16sp" />
+
+
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="18sp" />
+</LinearLayout>

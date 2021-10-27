@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="js/libfns.js"></script>
+    <script type="text/javascript" src="js/getrouteposition.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=EmulateIE9; IE=EmulateIE10;"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>SmartShehar Bus Route</title>
+    <meta name="description"
+          content="Routing Manager offers the ability to request a route with various modes between two points"/>
+    <meta name="keywords" content="routing, services, a to c via b, route, direction, navigation"/>
+    <!-- For scaling content for mobile devices, setting the viewport to the width of the device-->
+    <meta name=viewport content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- Styling for example container (NoteContainer & Logger)  -->
+    <link rel="stylesheet" type="text/css"
+          href="http://developer.here.com/apiexplorer/examples/templates/js/exampleHelpers.css"/>
+    <!-- By default we add ?with=all to load every package available, it's better to change this parameter to your use case. Options ?with=maps|positioning|places|placesdata|directions|datarendering|all -->
+    <script type="text/javascript" charset="UTF-8"
+            src="http://api.maps.nokia.com/2.2.4/jsl.js?with=all"></script>
+    <!-- JavaScript for example container (NoteContainer & Logger)  -->
+    <script type="text/javascript" charset="UTF-8"
+            src="http://developer.here.com/apiexplorer/examples/templates/js/exampleHelpers.js"></script>
+    <style type="text/css">
+        html {
+        overflow:hidden;
+        }
+
+        body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        }
+
+        #routeDescription {
+        width: 100%;
+        height: 9%;
+        left: 0;
+        top: 0;
+        font-size=18dp
+        position: absolute;
+        }
+        #mapContainer {
+        width: 100%;
+        height: 90%%;
+        left: 0;
+        top: 10%;
+        position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div id="routeDescription">Getting route map ...</div>
+<div id="mapContainer"></div>
+<div id="uiContainer"></div>
+<script type="text/javascript" id="exampleJsSource">
+		/*	Set authentication token and appid 
+		*	WARNING: this is a demo-only key
+		*	please register on http://api.developer.nokia.com/ 
+		*	and obtain your own developer's API key 
+		*/
+		var waypoints;
+		var mode;
+		var dbug;
+
+		nokia.Settings.set("appId", "_vdARnsB_196GVyt6YHQ"); 
+		nokia.Settings.set("authenticationToken", "PCcLpTe5BasDRsV_jTRHgQ");
+
+		// Get the DOM node to which we will append the map
+		var mapContainer = document.getElementById("mapContainer");
+		// Create a map inside the map container DOM node
+		var map = new nokia.maps.map.Display(mapContainer, {
+			// Initial center and zoom level of the map
+			center: [19.017108,72.840235],
+			zoomLevel: 14,
+			// We add the behavior component to allow panning / zooming of the map
+				components: [
+			new nokia.maps.map.component.Behavior(),
+			new nokia.maps.map.component.ZoomBar(),
+			new nokia.maps.map.component.Overview(),
+			new nokia.maps.map.component.TypeSelector(),
+			new nokia.maps.map.component.ScaleBar() ]	
+		}),
+		router = new nokia.maps.routing.Manager(); // create a route manager;
+		var waypoints = new nokia.maps.routing.WaypointParameterList();
+
+		routecd = gup('routecode');
+		dirn = gup('direction');
+		dbug = gup('debug');
+		var busno = gup('busno');
+		getRoutePosition(routecd,dirn,
+			function(aoRouteTrack)  {
+				var len = aoRouteTrack.length - 1;
+				var row;
+				var lat = 0, lon = 0;
+				var totalStops, plottedStops = 0, errorMessages = "";
+				totalStops = len + 1;
+				for(var i=0; i<=len;i++) {
+					row = aoRouteTrack[i];
+					lat = parseFloat(row.lat);
+					lon = parseFloat(row.lon);
+					if(row == undefined || isNaN(lat) || isNaN(lon)) {
+						errorMessages = errorMessages + "<p>Stop: " + parseInt(i) + ", Lat: " + row.lat +
+							", Lon: " + row.lon + ", Stop: " + row.stopname +
+							"</p>";
+						continue;
+					}
+					waypoints.addCoordinate(new nokia.maps.geo.Coordinate(lat, lon));
+					plottedStops = plottedStops + 1;
+				}
+			
+				var mode = [{
+					type: "fastest", 
+					transportModes: ["car"],
+					trafficMode: "disabled",
+					options: ""
+				}];
+
+				// Calculate the route (and call onRouteCalculated afterwards)
+				router.calculateRoute(waypoints,  mode.slice(0));
+				var dispbusno = busno.length > 0 ? busno : routecd;
+				document.getElementById('routeDescription').innerHTML = "Bus no.: " + 
+					dispbusno + 
+					"</br>Start: " + aoRouteTrack[0].stopname + "</br>End: " + aoRouteTrack[totalStops-1].stopname;
+				showPopup(totalStops, plottedStops, errorMessages);
+			
+		});	
+
+		// The function onRouteCalculated  will be called when a route was calculated
+		var onRouteCalculated = function (observedRouter, key, value) {
+			if (value == "finished") {
+				var routes = observedRouter.getRoutes(),
+					container = new nokia.maps.map.Container(),
+					route = routes[0],
+					waypoints = route.waypoints,
+					i, length = waypoints.length;
+		
+					// Add route polyline to the container
+					container.objects.add(new nokia.maps.map.Polyline(route.shape, {
+						pen : new nokia.maps.util.Pen({
+							lineWidth: 5, 
+							strokeColor: "#AB7A8C"
+						})
+					}));
+
+			// Add container to the map
+			map.objects.add(container);
+
+			// Iterate through all waypoints and add them to the container
+			for (i = 0; i < length; i++) {
+				//
+				container.objects.add(new nokia.maps.map.StandardMarker(waypoints[i].originalPosition, {
+					text: String.fromCharCode(65 + i) //65 is a char code for "A"
+				}));
+			}
+			//Zoom to the bounding box of the route
+			map.zoomTo(container.getBoundingBox(), false, "default");
+			} else if (value == "failed") {
+				alert("The routing request failed.");
+			}
+		};
+	
+		/* We create on observer on router's "state" property so the above created
+		 * onRouteCalculated we be called once the route is calculated
+		 */
+		router.addObserver("state", onRouteCalculated);
+
+/* Popup for descript of bus route and errors */
+	function showPopup(totalStops, plottedStops, errorMessages) {
+		 if(dbug == 'D') {
+			var noteContainer = new NoteContainer({
+				id: "routingUi",
+				parent: document.getElementById("uiContainer"),
+				title: "Errors",
+				content:"<p>Total Stops: " + parseInt(totalStops) + "</p><p>Plotted Stops: " + parseInt(plottedStops) +
+					"</p>Errors: " + errorMessages
+			});
+		}
+	}
+
+
+
+
+</script>
+</body>
+</html>

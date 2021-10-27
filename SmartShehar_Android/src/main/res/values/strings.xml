@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menuMapTitle">Map</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+
+    <string name="contentSplash">"Splash Screen"</string>
+    <string name="gps_enable">"GPS is disabled, meter readings will be inaccurate"</string>
+    <string name="no_gps_message">" Go to GPS setting page to turn it on?"</string>
+
+    <!-- Download and run pps -->
+    <string name="jumpinjumpout"> JumpInJumpOut</string>
+    <string name="descJijo">"Share your car with friends and others"</string>
+    <string name="runJijo">"Run Jump in Jump out"</string>
+    <string name="busDesc">"Real time bus schedules"</string>
+    <string name="runBus">"Run Bus app"</string>
+    <string name="trainDesc">"Best local train app for Mumbai"</string>
+    <string name="runTrain">"Run Train app"</string>
+    <string name="descAutoTaxi">"Fares, paths, for cabs and autos"</string>
+    <string name="runAutoTaxi">"Run AutoTaxi app"</string>
+    <string name="descCitizen">"Take action as a Citizen"</string>
+    <string name="runCitizen">"Run Citizen app"</string>
+    <string name="descSafetyShield">"Women's SafetyS Shield app"</string>
+    <string name="runSafetyShield">"Run Women's SafetyS Shield app"</string>
+    <string name="gps_disabled_msg">This is your old Location. Please click here to start your GPS to get nearest Station</string>
+    <string-array name="array_name">
+        <item>Select</item>
+    </string-array>
+
+    <!-- CallHome -->
+    <string name="atDBCreate">"D_DBC"</string>
+    <string name="atShare">"D_S"</string>
+    <string name="atRunBus">"D_RB"</string>
+    <string name="atDownloadBus">"D_DB"</string>
+    <string name="atRunAutoTaxi">"D_RA"</string>
+    <string name="atDownloadAutoTaxi">"D_DA"</string>
+    <string name="atRunTrain">"D_RT"</string>
+    <string name="atDownloadTrain">"D_DT"</string>
+    <string name="atRunSafetyShield">"D_RBS"</string>
+    <string name="atDownloadSafetyShield">"D_DBS"</string>
+    <string name="atDownloadSmartShehar">"C_LS"</string>
+    <string name="pageDashboard">"/DD</string>
+    <string name="pageDashboardLong">"SmartShehar_Dashboard"</string>
+    <string name="pageDashboardFeedback">"/DF</string>
+    <string name="pageDashboardFeedbackLong">"/SmartShehar_Feedback"</string>
+
+
+    <string name="eula_title">Mumbai Local Trains Terms of Use</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <!-- CallHome -->
+    <string name="androidAppLink">https://play.google.com/store/apps/details?id=com.smartshehar.dashboard.app \nCheck out this great Android App.\n Look for smartshehar on Android Market (Google Play)\n"</string>
+
+
+    <!-- Contact Us -->
+    <string name="contactUs">"Contact Us"</string>
+    <string name="feedback">"FeedBack/Questions"</string>
+    <string name="feedback_for">"FeedBack for"</string>
+    <string name="advertise">"Advertise with Us"</string>
+    <string name="advertise_interest">"Interested in Advertising "</string>
+    <string name="rate">"Rate Us"</string>
+    <string name="rateAndroid">"Rate on Google Play"</string>
+    <string name="social">"Social"</string>
+    <string name="shareFacebook">"Like our Facebook Page"</string>
+    <string name="shareTwitter">"Follow us on Twitter"</string>
+    <string name="website">"www.smartshehar.com"</string>
+    <!-- Contact Us -->
+    <!-- Home Buttons -->
+    <string name="home_jijo">"Jump in Jump out rideshare"</string>
+    <string name="home_bus">"Bus"</string>
+    <string name="home_train">"Train"</string>
+    <string name="home_autotaxi">"Auto\nTaxi"</string>
+    <string name="home_citizen">"Citizen"</string>
+    <string name="home_safetyshield">"Safety Shield"</string>
+    <string name="map">ISSUES ON MAP</string>
+    <string name="dashboard">DASHBOARD Report</string>
+    <string name="home_smartshehar">"SmartShehar\nMumbai"</string>
+    <string name="home_preferences">"Settings"</string>
+    <string name="home_feedback">"Feedback"</string>
+    <string name="track_path">Track Path</string>
+
+
+    <string name="getinvolved">Get involved - Log your issue</string>
+
+    <!-- Home Buttons -->
+
+<string name="updates">New SmartShehar App added. Must have for everybody especially women stuck in bad situations\n
+Train timetables updated
+Auto fares updated
+http://www.smartshehar.com\n
+http://www.facebook.com/smartshehar\n
+email: smartshehar@gmail.com\n
+</string>
+<string name="eula">
+By downloading any application from Smart Shehar or Tech. Services (India) Pvt. Ltd (here after referred to as "The Company") or Google™, installing or using this application or any portion thereof ("Application"), you agree to the following terms and conditions (the "Terms and Conditions").\n
+
+1. USE OF APPLICATION\n
+a. The Company grants you the non-exclusive, non-transferable, limited right and license to install and use this Application solely and exclusively for your personal use.\n
+b. You may not use the Application in any manner that could damage, disable, over-burden, or impair the Application (or servers or networks connected to the Application), nor may you use the Application in any manner that could interfere with any other party\'s use and enjoyment of the Application (or servers or networks connected to the Application).
+c. You agree that you are solely responsible for (and that The Company has no responsibility to you or to any third party for) your use of the Application, any breach of your obligations under the Terms and Conditions, and for the consequences (including any loss or damage which The Company may suffer) of any such breach.\n
+
+2. PROPRIETARY RIGHTS\n
+You acknowledge that (a) the Application contains proprietary and confidential information that is protected by applicable intellectual property and other laws, and (b) The Company and/or third parties own all right, title and interest in and to the Application and content, excluding content provided by you, that may be presented or accessed through the Application, including without limitation all Intellectual Property Rights therein and thereto. "Intellectual Property Rights" means any and all rights existing from time to time under patent law, copyright law, trade secret law, trademark law, unfair competition law, and any and all other proprietary rights, and any and all applications, renewals, extensions and restorations thereof, now or hereafter in force and effect worldwide. You agree that you will not, and will not allow any third party to, (i) copy, sell, license, distribute, transfer, modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from the Application or content that may be presented or accessed through the Application for any purpose, unless otherwise permitted, (ii) take any action to circumvent or defeat the security or content usage rules provided, deployed or enforced by any functionality (including without limitation digital rights management functionality) contained in the Application, (iii) use the Application to access, copy, transfer, transcode or retransmit content in violation of any law or third party rights, or (iv) remove, obscure, or alter The Company\'s or any third party\'s copyright notices, trademarks, or other proprietary rights notices affixed to or contained within or accessed in conjunction with or through the Application.\n
+
+3. THE COMPANY TERMS OF SERVICE AND PRIVACY POLICY\n
+a. The Company\'s Privacy Policy (located at http://smartshehar.com/privacypolicy.html) explains how The Company treats your information and protects your privacy when you use the Application. You agree to the use of your data in accordance with The Company\'s privacy policies.\n
+b. The Application may contain features that are used in conjunction with The Company\'s search and other services. Accordingly, your use of such features of the Application is also governed by The Company\'s Terms of Service located at http://smartshehar.com/terms_of_service.html,as well as any applicable The Company Service-specific Terms of Service and Privacy Policy, which may be updated from time to time and without notice.\n
+
+4. TERMINATION\n
+These Terms and Conditions will continue to apply until terminated by either you or The Company as set forth below. You may terminate these Terms and Conditions at any time by permanently deleting the Application from your mobile device in its entirety. Your rights automatically and immediately terminate without notice from The Company or any Third Party if you fail to comply with any provision of these Terms and Conditions. In such event, you must immediately delete the Application and any associated data.\n
+
+5. INDEMNITY\n
+To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless The Company, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys fees) arising out of or accruing from your use of the Application, including your downloading, installation, or use of the Application, or your issues of these Terms and Conditions.\n
+
+6. DISCLAIMER OF WARRANTIES\n
+a. YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE APPLICATION IS AT YOUR SOLE DISCRETION AND RISK AND THAT THE APPLICATION IS PROVIDED AS IS AND AS AVAILABLE WITHOUT WARRANTY OF ANY KIND.\n
+b. YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR MOBILE DEVICE, OR OTHER DEVICE, OR LOSS OF DATA THAT RESULTS FROM SUCH USE.\n
+c. THE COMPANY FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, WITH RESPECT TO THE APPLICATION.\n
+d. THE APPLICATION IS NOT INTENDED FOR USE IN THE OPERATION OF NUCLEAR FACILITIES, LIFE SUPPORT SYSTEMS, EMERGENCY COMMUNICATIONS, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL SYSTEMS, OR ANY OTHER ACTIVITIES IN WHICH THE FAILURE OF THE APPLICATION COULD LEAD TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE.\n
+
+7. LIMITATION OF LIABILITY\n
+YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE COMPANY, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS ARE NOT LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU THROUGH YOUR USE OF THE APPLICATION, INCLUDING ANY LOSS OF DATA OR DAMAGE TO YOUR MOBILE DEVICE, WHETHER OR NOT THE COMPANY OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.\n
+
+8. MISCELLANEOUS\n
+a. These Terms and Conditions constitute the entire Agreement between you and The Company relating to the Application and govern your use of the Application, and completely replace any prior or contemporaneous agreements between you and The Company regarding the Application.\n
+b. The failure of The Company to exercise or enforce any right or provision of these Terms and Conditions does not constitute a waiver of such right or provision, which will still be available to The Company.\n
+c. If any court of law, having the jurisdiction to decide on this matter, rules that any provision of these Terms and Conditions is invalid, then that provision will be removed from the Terms and Conditions without affecting the rest of the Terms and Conditions. The remaining provisions of these Terms and Conditions will continue to be valid and enforceable.\n
+d. The rights granted in these Terms and Conditions may not be assigned or transferred by either you or The Company without the prior written approval of the other party. Neither you nor The Company are permitted to delegate their responsibilities or obligations under these Terms and Conditions without the prior written approval of the other party.\n
+e. These Terms and Conditions and your relationship with The Company under these Terms and Conditions will be governed by the laws of the State of California without regard to its conflict of laws provisions. You and The Company agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from these Terms and Conditions. Notwithstanding this, you agree that The Company will still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.\n
+</string>
+    <string name="youarehere">You Are Here</string>
+    <string name="transport">TRANSPORT</string>
+    <string name="otherapp">Other Apps</string>
+    <string name="governance">GOVERNANCE</string>
+    <string name="where_are_you_going">Where are you travelling today?</string>
+    <string name="help_your_city">Help your city</string>
+    <string name="closest_train">Closest Train Stations</string>
+    <string name="closest_bus">Closest Bus Stops</string>
+    <string name="near_you">Near You</string>
+    <string name="auto">Auto</string>
+    <string name="taxi">Taxi</string>
+    <string name="minfare">Min. Fare</string>
+    <string name="estafare">Est. Auto Fare to</string>
+    <string name="esttfare">Est. Taxi Fare to</string>
+    <string name="closest_taxi">Closest Available Taxi</string>
+    <string name="municipal">MUNICIPAL ISSUES</string>
+    <string name="municipal_title">Municipal Issues</string>
+    <string name="noise">Noise</string>
+    <string name="traffic_violation">TRAFFIC ISSUES</string>
+    <string name="traffic_violation_title">Traffic Issues</string>
+    <string name="offers">Offers</string>
+    <string name="title_activity_activity_parking_valuation">Your Issue</string>
+    <string name="title_activity_traffic_violation">TRAFFIC ISSUES</string>
+    <string name="parking_violation">Parking Issues</string>
+    <string name="moving_violation">Moving Issues</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_offence">Address of Issues</string>
+    <string name="time_offence">Date and Time</string>
+    <string name="getting_location">Getting Location</string>
+    <string name="interneterr">Internet Connection failed. Please check your settings &amp; retry to get your current address</string>
+    <string name="wardno">Ward No</string>
+    <string name="dropdown">Drop down</string>
+    <string name="enter_ward_no">Please enter municipal ward no.\nif you know</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="date_offence">01 January, 2015</string>
+    <string name="type_offence">Type of Issues</string>
+    <string name="vehicle_no">Vehicle No.</string>
+    <string name="takePic">Add Picture</string>
+    <string name="upload">Done</string>
+    <string name="camera">Open Camera</string>
+    <string name="gallery">Open Gallery</string>
+    <string name="hide">hide</string>
+    <string name="title_activity_offence_list_fragment">OffenceListFragment</string>
+    <string name="title_activity_offence_details_list">OffenceDetailsList</string>
+    <string name="decision">Are you sure you want to delete this image?</string>
+    <string name="positive_button">Submit</string>
+    <string name="verify">Verify</string>
+    <string name="negative_button">Submit later</string>
+    <string name="yes">Yes</string>
+    <string name="add_issue">Add New Issue</string>
+    <string name="no">No</string>
+    <string name="carimage">Car Pic</string>
+    <string name="image_gallery">Image From Gagllery</string>
+    <string name="takeVideo">Take Video</string>
+    <string name="video_gallery">Video From Gagllery</string>
+    <string name="title_activity_offence_details_report">OffenceDetailsReport</string>
+    <string name="title_activity_pop_up_menu">PopUpMenuActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_camera2_basic_fragment">Camera2BasicFragment</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_add_images">AddImagesActivity</string>
+    <string name="description">* Make sure that number plate is visible. </string>
+    <string name="title_activity_image_list">imageList</string>
+    <string name="menuMyComplaints">MY ISSUES</string>
+    <string name="title_activity_card_view">Your Issues</string>
+    <string name="title_activity_recycler_view_fragment">RecyclerViewFragment</string>
+    <string name="crash_toast_text">Sorry, Smartshehar App crashed.\nPlease check if there is a new version on the play store.</string>
+    <string name="optional_image">You can take additional photos (if reqd) to show the issues more clearly. </string>
+    <string name="number_plate">Make sure the number plate is clearly visible. </string>
+    <string name="issue_image">Make sure the issue is clearly visible in the photo.</string>
+    <string name="gotIt">Got it</string>
+    <string name="takephoto">Take a picture</string>
+    <string name="helplinetext1">SmartShehar allows you to report traffic or municipal issues around you to authorities. It also finds public transport or shared rides around you (In certain cities). This dashboard also serves as a gateway to other Apps from SmartShehar Team </string>
+    <string name="help">Help</string>
+    <string name="refreshLocation">Refresh Location</string>
+    <string name="issueMap">View Issue on Map</string>
+    <string name="alreadySubmited">This complaint is already submitted.</string>
+    <string name="retry_internet">Please check your internet connection and retry</string>
+    <string name="app_label">Smartshehar Dashboard</string>
+    <string name="delete_warning">Do you want to delete this photo?</string>
+    <string name="user_registration_warning">Not registered</string>
+    <string name="noappuserid">Oops. Something went wrong. Please check your Internet connection &amp; retry. </string>
+    <string name="lose_info">You will lose information. Are you sure?</string>
+    <string name="discard_warning">Do you want to discard this issue?</string>
+    <string name="submitted">Submitted</string>
+    <string name="upload_letter_head">Upload Stamped Letter head to Authority</string>
+    <string name="submit">Submit</string>
+    <string name="changeward"><u>Change ward</u></string>
+    <string name="not_submitted">Pending</string>
+    <string name="thankyoumessage">Thank you! Your complaint is now submitted.</string>
+    <string name="emptylist">Empty list</string>
+    <string name="title_activity_iamge__expand__layout">Iamge_Expand_Layout</string>
+    <string name="quickphoto">Quick Photo</string>
+    <string name="quickvideo">Quick Video</string>
+    <string name="quickcomplaint">Complaint</string>
+    <string name="writtencomplaints">Written Complaints</string>
+    <string name="mylist">Report List</string>
+    <string name="title_activity_violation">IssueActivity</string>
+    <string name="want_extra_photo">Do you want to take one more photo?</string>
+    <string name="yourcurrentloc">#Your current location</string>
+    <string name="neartrain">Nearest train</string>
+    <string name="nearbus">Nearest bus</string>
+    <string name="neartrainbus">Nearest train &amp; bus</string>
+    <string name="noservice">Sorry, the service is not available</string>
+    <string name="fullmapshowtrainbus">Bus Train Location</string>
+    <string name="refreshscreen">Trip is incomplete. Please refresh the screen to see all stations of this trip.</string>
+    <string name="discard">Discard</string>
+    <string name="from_vendor_name">from </string>
+    <string name="discount">discount </string>
+    <string name="group_complaints">Group Complaints</string>
+    <string name="sendToAutho">Send To Authority</string>
+    <string name="reject">Reject</string>
+    <string name="add_comment">Comment</string>
+    <string name="resolved">Resolved</string>
+    <string name="no_resolution">No resolution</string>
+
+    <string name="closedcomplaint">Complaint is closed</string>
+    <string name="notsatisfied">Not Satisfied</string>
+
+    <string name="pending">Pending</string>
+    <string name="issue">Issue</string>
+    <string name="log_issue">Log Issue</string>
+    <string name="letter_head">Stamped Letter Head</string>
+    <string name="status">Status: Pending</string>
+    <string name="resolve_confirmation">Are you sure Issue is resolved?</string>
+    <string name="noresolution_confirmation">Are you sure there is no resolution?</string>
+    <string name="remark">Remark</string>
+    <string name="submitted_on">Submitted on</string>
+    <string name="to_whom">To whom?</string>
+    <string name="department">Department</string>
+    <string name="designation">Designation</string>
+    <string name="show_notification">Show Notification</string>
+    <string name="connection_error">Internet connection problem.</string>
+    <string name="address">Address</string>
+    <string name="not_register">You have not created a profile. Some features will be unavailble.</string>
+    <string name="myissue">My Issues</string>
+    <string name="parking_issue">PARKING VIOLATION</string>
+    <string name="moving_issue">MOVING VIOLATION</string>
+    <string name="vehicle_pollution">Vehicle &amp; Pollution Related</string>
+    <string name="autotaxi">Auto-Rickshaw/Taxi</string>
+    <string name="roads">ROADS</string>
+    <string name="cleanliness">CLEANLINESS</string>
+    <string name="basic_infra">Basic Infrastructure (Electricity/Water)</string>
+    <string name="enchr">Hawkers/Encroachment</string>
+    <string name="publicspace">Public Spaces/Greenery under attack</string>
+    <string name="filter">Filter</string>
+
+
+    <string name="ParkingViolation">Parking Violation</string>
+    <string name="MovingViolation">Moving Violation</string>
+    <string name="RegularTrafficProblem">Regular Traffic Problem</string>
+    <string name="AutoRickshawTaxi">Auto-Rickshaw/Taxi</string>
+    <string name="Roads">Roads</string>
+    <string name="Cleanliness">Cleanliness</string>
+    <string name="HawkersEncroachment">Hawkers/Encroachment</string>
+    <string name="SafetyIssues">Safety Issues</string>
+    <string name="WaterElectricity">Water/Electricity</string>
+    <string name="OpenSpacesGreenery">Open Spaces/Greenery</string>
+    <string name="RequestaService">Request a Service</string>
+    <!--Categories-->
+
+    <string name="category">Category</string>
+    <string name="footpath">Footpath</string>
+    <string name="missingfootpath">Missing Footpath</string>
+    <string name="unevenfootpath">Uneven/Broken Footpath</string>
+    <string name="unevenpaver">Uneven/Broken Paver Blocks</string>
+    <string name="enchroachedfootpath">Enchroached Footpath</string>
+    <string name="dirtyfootpath">Dirty Footpath</string>
+    <string name="potholes">Potholes</string>
+    <string name="potholesroad">Potholes on the road</string>
+    <string name="unevenroad">Uneven Road Surface</string>
+    <string name="duguproad">Dug Up Road</string>
+    <string name="shoddy">Shoddy Repair Work</string>
+    <string name="garbage">Garbage</string>
+    <string name="accumulated">Accumulated Garbage</string>
+    <string name="notpickedup">Garbage not picked up</string>
+    <string name="sweepersnot">Sweepers not being seen</string>
+    <string name="constrution">Construction Debris dumped</string>
+    <string name="beingbumt">Garbage being bumt</string>
+    <string name="drains">Drains/Nullahs</string>
+    <string name="opendrain">Open Drain/Sewage Line</string>
+    <string name="clogged">Clogged/Overflowing Sewage Line</string>
+    <string name="sanitation">Sanitation</string>
+    <string name="openurination">Open Defecation/Urination</string>
+    <string name="dog">Dog Droppings</string>
+    <string name="unclean">Unclean Public Restroom</string>
+    <string name="pests">Pests</string>
+    <string name="mosquitos">Mosquitos</string>
+    <string name="straydogs">Stray dogs gangs</string>
+    <string name="pigeonmenace">Pigeon Menace</string>
+    <string name="enchroach">ENCROACHMENT/HAWKERS</string>
+    <string name="hawkers">Hawkers</string>
+    <string name="illegalfruit">Illegal Fruit/Vegetable sellers</string>
+    <string name="illegalfood">Illegal Food Stalls</string>
+    <string name="tookfootpath">Hawkers took my footpath</string>
+    <string name="enchroachment">Enchroachment</string>
+    <string name="extension">Illegal Extension to restaurants</string>
+    <string name="illegalconstrucion">Illegal Consstruction</string>
+    <string name="hoarding">Hoardings/Banners</string>
+    <string name="beach">Beach Encroachments</string>
+    <string name="safetyissue">SAFETY ISSUES</string>
+    <string name="womensafety">Women Safety</string>
+    <string name="rampant">Rampant Eveteasing</string>
+    <string name="antisocial">Anti-Social Elements</string>
+    <string name="general">General</string>
+    <string name="insufficient">Insufficient Street Lighting</string>
+    <string name="purse">Purse Snatching Incidents</string>
+    <string name="thefts">Thefts/Robberies in the area</string>
+    <string name="fire">Fire Hazards</string>
+    <string name="waterelectricity">WATER/ELECTRICITY</string>
+    <string name="water">Water</string>
+    <string name="waterscarcity">Water Scarcity</string>
+    <string name="lowwater">Low Water Pressure</string>
+    <string name="leakwater">Leak in Water Lines</string>
+    <string name="contaminated">Contaminated Water Supply</string>
+    <string name="electricity">Electricity</string>
+    <string name="illegleelectricity">Illegal Electricity Connections</string>
+    <string name="irregular">Irregular Electricity Supply</string>
+    <string name="open">OPEN SPACES/GREENERY</string>
+    <string name="openspaces">Open Spaces</string>
+    <string name="garden">Encroached Garden</string>
+    <string name="antiactivity">Anti Social Elements/Activity</string>
+    <string name="poorly">Poorly Maintained park/garden</string>
+    <string name="greencover">Green Cover</string>
+    <string name="treefelling">Tree felling</string>
+    <string name="deliberately">Deliberately Poisoned Trees</string>
+    <string name="infested">Infested/Deseased Trees</string>
+    <string name="mangroves">Mangroves in danger</string>
+    <string name="requestservice">REQUEST A SERVICE</string>
+    <string name="fogging">Fogging</string>
+    <string name="treetrimming">Tree Trimming</string>
+    <string name="scraping">Scraping</string>
+
+
+    <string name="recent">Recent</string>
+    <string name="PVVal">PV</string>
+    <string name="MVVal">MV</string>
+    <string name="RTVal">RT</string>
+    <string name="AUTVal">AT</string>
+    <string name="RDVal">RD</string>
+    <string name="CLVal">CL</string>
+    <string name="ENVal">EN</string>
+    <string name="SFVal">SF</string>
+    <string name="WEVal">WE</string>
+    <string name="OGVal">OG</string>
+    <string name="RSVal">RS</string>
+
+    <string name="gettingissues">Getting issues</string>
+
+    <string name="illegalparking">Illegal Parking</string>
+    <string name="illegalstoppage">Illegal Stoppage</string>
+    <string name="trafficruleviolation">Traffic Rule Violation</string>
+    <string name="airnoise">Air/Noise Pollution</string>
+    <string name="regulartraffic">REGULAR TRAFFIC PROBLEM</string>
+    <string name="regulartrafficjams">Regular Traffic Jams</string>
+    <string name="changerequest">Change Requested</string>
+    <string name="regularproblem">Regular Problems </string>
+    <string name="autotaxiRickshaw">AUTO-RICKSHAW/TAXI</string>
+    <string name="badbehaviou">Bad Behavior</string>
+
+
+    <string name="MF">Missing Footpath</string>
+    <string name="UBF">Uneven/Broken Footpath</string>
+    <string name="UBP">Broken/Uneven Paver Blocks</string>
+    <string name="EF">Encroached Footpath</string>
+    <string name="DLF">Dirty/Littered Footpath</string>
+    <string name="POR">Potholes on the road</string>
+    <string name="URS">Uneven Road Surface</string>
+    <string name="DUR">Dug Up Road</string>
+    <string name="SRW">Shoddy Repair Work</string>
+    <string name="AG">Accumulated Garbage</string>
+    <string name="GNP">Garbage not picked up</string>
+    <string name="SNS">Sweepers not being seen</string>
+    <string name="CDD">Construction Debris dumped</string>
+    <string name="GBB">Garbage being burnt</string>
+    <string name="ODSL">Open Drain/Sewage Line</string>
+    <string name="COSL">Clogged/Overflowing Sewage Line</string>
+    <string name="ODU">Open Defecation/Urination</string>
+    <string name="DD">Dog Droppings</string>
+    <string name="UPR">Unclean Public Restroom</string>
+    <string name="MS">Mosquitos</string>
+    <string name="SDG">Stray dogs gangs</string>
+    <string name="PGM">Pigeon Menace</string>
+    <string name="IFVS">Illegal Fruit/Vegetable sellers</string>
+    <string name="IFS">Illegal Food Stalls</string>
+    <string name="HTMF">Hawkers took my footpath</string>
+    <string name="IER">Illegal Extension to restaurants</string>
+    <string name="IC">Illegal Construction</string>
+    <string name="HBN">Hoardings/Banners</string>
+    <string name="BEN">Beach Encroachments</string>
+    <string name="RE">Rampant Eveteasing</string>
+    <string name="ASE">Anti-Social Elements</string>
+    <string name="ISLT">Insufficient Street Lighting</string>
+    <string name="PSI">Purse Snatching Incidents</string>
+    <string name="TRA">Thefts/Robberies in the area</string>
+    <string name="FRH">Fire Hazards</string>
+    <string name="WS">Water Scarcity</string>
+    <string name="LWP">Low Water Pressure</string>
+    <string name="LWL">Leak in Water Lines</string>
+    <string name="CWS">Contaminated Water Supply</string>
+    <string name="IEC">Illegal Electricity Connections</string>
+    <string name="IES">Irregular Electricity Supply</string>
+    <string name="EG">Encroached Garden</string>
+    <string name="ASEA">Anti Social Elements/Activity</string>
+    <string name="PMPG">Poorly Maintained park/garden</string>
+    <string name="GTF">Fallen Tree due to rains</string>
+    <string name="TF">Tree Felling</string>
+    <string name="DPT">Deliberately Poisoned Trees</string>
+    <string name="IDT">Infested/Deseased Trees</string>
+    <string name="MGD">Mangroves in danger</string>
+    <string name="FG">Fogging</string>
+    <string name="TT">Tree Trimming</string>
+    <string name="SC">Scraping</string>
+
+
+    <string name="PNPZ">Parking in No Parking zone</string>
+    <string name="DP">Double Parking</string>
+    <string name="PFGT">Parking in front of a gate</string>
+    <string name="PFP">Parking on footpath</string>
+    <string name="OEPV">Odd/Even Parking Violation</string>
+    <string name="PBS">Parking at Bus-stop</string>
+    <string name="PCO">Parking at corner</string>
+    <string name="PRPS">Parking in reserved parking space</string>
+    <string name="DRBT">Driver in the car, blocking traffic</string>
+    <string name="SNSZ">Stopped at No-Stopping Zone</string>
+    <string name="TBTM">Truck blocking traffic movement</string>
+    <string name="VLMR">Vehicle left in middle of road</string>
+    <string name="RD">Rash Driving</string>
+    <string name="SJ">Signal Jumping</string>
+    <string name="LC">Lane Cutting</string>
+    <string name="IT">Illegal Turn</string>
+    <string name="DAOW">Driving against One-way</string>
+    <string name="OS">Overspeeding</string>
+    <string name="MTSH">Multi-toned or Shrill Horn</string>
+    <string name="SE">Smokey Exhaust</string>
+    <string name="DG">Dark Glasses</string>
+    <string name="DN">Dangerous goods</string>
+    <string name="TB">Traffic Bottlenecks</string>
+    <string name="PD">Pedestrians on road</string>
+    <string name="IPV">Illegally parked vehicles</string>
+    <string name="NPR">Need Parking Restrictions</string>
+    <string name="NOWR">Need One-Way Restriction</string>
+    <string name="HV">Need curbs on heavy vehicles</string>
+    <string name="SBRJ">School Bus related jams</string>
+    <string name="RP">Refusing to ply</string>
+    <string name="RM">Rigged Meter</string>
+    <string name="MHD">Meter Half Down</string>
+    <string name="RB">Rude Behavior</string>
+    <string name="BTR">Breaking Traffic Rules</string>
+    <string name="BND">Badge Not Displayed</string>
+    <!--Categories-->
+
+
+    <!-- failing message -->
+
+    <string name="requires_internet">Smartshehar App requires Internet Connection to function.\n\nTurn mobile data on?</string>
+    <string name="gettingissuetypefailed">Please wait while we load the complaints categories for your location</string>
+    <string name="time_out">We Give Up! We could not connect with our server. Please check your Internet connection or try checking a few moments later</string>
+    <string name="gettingwardfailed">We are trying to load wards for your location. Please check your Internet connection or try checking a few moments later.</string>
+    <string name="makesureAddTime">Please make sure issue address and date is detected.</string>
+    <string name="internet_error_submitting_issue">We are having a difficulty in reaching our server to submit your complaint.
+        Your complaint will be submitted as soon as your Internet connection is back</string>
+    <!-- failing message -->
+    <!--Dialog messages-->
+    <string name="municipalissuesubmitted">Thank you for taking the first step towards improving your neighborhood. \nYour complaint is received and will be forwarded to authorities after verification. \nPlease allow up to 24 hours for our team to verify everything\'s OK. You will be notified when we do that</string>
+    <string name="trafficissuesubmitted">Thank you for using SmartShehar to submit traffic related complaint.\nOur team will review the submitted complaint &amp; forward it to concerned Traffic Police Department after verification. \nSince these violations are temporary in nature, we will use these complaints to identify areas where maximum violations take place. \nThis information will be used for improving enforcement and designing new policies</string>
+    <string name="waitingforapproval">Please allow 24 hours for your complaint to be accepted by our team for further processing</string>
+    <string name="howdoesitwork">How does it work?</string>
+    <string name="beforeApproval">SmartShehar Team will ensure that the photograph accompanying complaint is clear and the complaint is filed under correct category before accepting the complaint.</string>
+    <string name="municipalwork">After a complaint is submitted, SmartShehar team gets cracking.\nWe make sure everything is in order and then forward it to government authorities.\nThe Municipal complaints are forwarded to Assistant Commissioner for the ward.\nSimultaneously we notify volunteers (if any) in your area who have signed up to tackle issues in your area.\nThese volunteers will then follow up with authorities &amp; will keep you updated of progress of your complaint. \nIf there are no volunteers in your area, we encourage you to become one today!\nWe will help you to make your neighborhood better! </string>
+    <string name="trafficwork">Traffic Rule Violations are temporary in nature and while we notify the traffic police as soon as the complaint is verified, it may be too late for them to take any action (such as towing of vehicles).\nSo we use these complaints to build a database of issues and work with traffic police, residents and activists to address issues at systemic level.\nFor example, if multiple people are submitting issues related to illegal parking from one particular area, the traffic police will improve enforcement there.\nLet the collective voice of the citizens help our authorities to prioritize action. </string>
+    <string name="mapsummary">SmartShehar provides unprecedented transparency in tracking quality of life in a particular neighborhood.\nOn this screen, you will see issues submitted by your fellow citizens.\nYou can customize the look of this map by filtering issues belonging to one or more categories.\nYou can also filter issues for a particular area.</string>
+    <string name="wanttohelp">I want to help</string>
+    <string name="thanking">That\'s just awesome! You can help by remaining an alert citizen and logging issues on SmartShehar platform.\nThere\'s lot that happens behind the scenes.\nWe are running analytics to find patterns/trends and hot-zones for particular types of issues.\nWe are also working with your elected representatives to help them prioritize issues to be fixed.\nYou are more than welcome to help in this effort. You could take ownership of your area and start engaging with your local representatives. That\'s the power of democracy. Write to us to find more!</string>
+    <!--Dialog messages-->
+    <!--Saftey shield  -->
+    <string name="home_emergency">"Emergency"</string>
+    <string name="home_alarm">"Sound Alarm"</string>
+    <string name="home_walkwithme">"Walk with Me"</string>
+    <string name="home_police">"Police"</string>
+    <string name="home_hospital">"Hospital"</string>
+    <string name="gps_for_address">Turning your Location and Internet ON will show your current location</string>
+    <string name="gps_for_trains">Turning your Location and Internet ON will show nearby train stations</string>
+    <string name="gps_for_bus">Turning your Location and Internet ON will show nearby bus-stops</string>
+    <string name="gps_for_taxi">Turning your Location and Internet ON will show nearby Auto-Taxi stands</string>
+    <string name="no_iternet_to_submit_issue">To submit a issue you need to be connected to Internet</string>
+<string name="basicDataWarning">
+
+<![CDATA[
+	<p><h3><font color=\'red\' >You have not entered <b>basic</b> required information. App. will have <b>limited functionality</b></font></h3></p>
+	<p style="color:black;font-size:16px;">Make sure that name, number, email for you and at least one Emergency Contact is entered</p>
+]]>
+</string>
+    <string name="helpText">
+<![CDATA[
+	<p>Click setting - Enter your <b>name</b>, <b>phone number</b> and at least <b>Emergency email id 1</b><p>
+	<p>Now when you are in trouble, press the Emergency button, take a picture and save it</p>
+	<p>SmartShehar.com Safety Shield app will automatically email the picture to your Emergency Contact with your location and contact information.
+		A copy will be sent to you. </p>
+	<b>For the app to work, you need an <b>active internet connection</b>.</p>
+]]>
+</string>
+    <string name="title_activity_saftey_shield_dashboard">Safety Shield</string>
+    <string name="donotshowagain">Do not show again</string>
+
+    <string name="location_settings_title">Improve location accuracy</string>
+    <string name="location_settings">Settings</string>
+    <string name="location_skip">Skip</string>
+    <string name="location_instructions">To make sure of sending and effective location:\n\n• Turn on GPS and mobile network location\nSkipping this may affect your safety</string>
+    <string name="never_show_again">Never show this again</string>
+    <string name="no_location">No location. Please turn on GPS</string>
+    <string name="pageBeSafeDashboardLong">"/SS_Dashboard"</string>
+    <string name="pageBeSafeEmergencyLong">"/SS_Emergency</string>
+    <string name="pageBeSafeEmergency">"/SS_E</string>
+    <string name="appwidget_configure_instructions">This text will be shown before the date in our example widget.</string>
+    <string name="appwidget_prefix_default">Oh hai</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="email_hint">Enter email ids separated by , e.g. abc@xx.com, def@yyy.com</string>
+    <string name="safety_shield">SmartShehar Safety Shield</string>
+    <string name="location_service_label">SmartShehar Safety Shield</string>
+    <string name="codeHint">"Smartshehar app verifcation code (use only if app did not activate automatically): "</string>
+    <string name="location_service_label_auto_taxi">"Auto Taxi Meter"</string>
+    <string name="please_wait">Please waite</string>
+    <string name="go">Go</string>
+    <string name="menu_clear_settings">Clear Settings</string>
+    <string name="pref_phonenumber_hint">Your Phone number for emergency email contacts</string>
+    <string name="pref_cc_hint">Emergency email contact e.g. abc@hotmail.com</string>
+    <string name="pref_cc_phone_hint">Emergency contact\'s phone no. for emergency sms</string>
+    <string name="no_internet">"You are not connected to the Internet\n. For the app to work, you need to have a WiFI or mobile internet connection turned on. Please turn on your Internet connection"</string>
+    <string name="pref_myemail_hint">Your email id e.g. abc@gmail.com</string>
+    <string name="widget_title">SafetyShield</string>
+
+    <!-- Saftey shield  -->
+
+
+    <!--autotaxi app-->
+
+    <string name="smartshehar">"SmartShehar"</string>
+    <!--<string name="appTitle">"SmartShehar Auto Taxi"</string>-->
+    <string name="description_home">Home</string>
+    <string name="description_search">Search</string>
+    <string name="gaid">UA-32381506-4</string>
+    <string name="adunitid">"a14f147a2658628"</string>
+
+    <string name="home_page">Page Auto/Taxi</string>
+    <string name="home_meter">Virtual\nMeter</string>
+    <string name="home_card">Card 11-Oct-12</string>
+    <string name="home_map">Map</string>
+    <string name="home_mytrips">"My Trips (Beta)"</string>
+
+    <!--<string name="atDBCreate">"W_DBC"</string>
+    <string name="atFirstUse">"W_F"</string>
+    <string name="atShare">"W_S"</string>-->
+    <string name="atShareLong">"Where Share"</string>
+    <string name="atRunSmartSheharAuto">"A_RS"</string>
+    <string name="atRunSmartSheharLong">"Run SmartShehar (Auto)"</string>
+    <string name="atDownloadSmartSheharAuto">"A_LS"</string>
+    <string name="atDownloadSmartSheharLong">"Download SmartShehar (Auto)"</string>
+    <string name="atMyTripShowSummary">"A_TS"</string>
+
+
+    <!--<string name="pageDashboard">"/AD</string>
+    <string name="pageDashboardLong">"/AutoTaxi_Dashboard"</string>-->
+    <string name="pageMeter">"/AM</string>
+    <string name="pageMeterLong">"/AutoTaxi_Meter</string>
+    <string name="pageCard">"/AF</string>
+    <string name="pageCardLong">"/AutoTaxi_Feedback</string>
+    <string name="pageFeedback">"/AF</string>
+    <string name="pageFeedbackLong">"/AutoTaxi_Feedback</string>
+    <string name="pageMyTrips">"/AT</string>
+    <string name="pageMyTripsLong">"/AutoTaxi_MyTrips</string>
+    <string name="pageTripSummary">"/AS</string>
+    <string name="pageMyTripSummaryLong">"/AutoTaxi_TripSummary</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="locationWait">"Waiting for location .."</string>
+    <string name="area_not_available">""Area not available"</string>
+    <string name="landmark_not_available">"Landmark not available"</string>
+    <string name="area">"Area: "</string>
+    <string name="landmark">"Landmark: "</string>
+    <string name="at">"At: "</string>
+    <string name="street">Street:</string>
+    <string name="na">N/A</string>
+    <string name="none">None</string>
+    <string name="menucommuting">Commuting</string>
+    <string name="menugovernance">Governance</string>
+    <string name="menuother">Other Apps</string>
+
+    <!--<string name="eula_title">AutoFare Terms of Use</string>-->
+
+    <string name="trip">Trip</string>
+    <string name="ssTrip">SmartShehar Calculations</string>
+
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="meterreading">"Meter"</string>
+    <string name="totalfare">"Total"</string>
+    <string name="dayfare">Day fare</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="Fare">Fare</string>
+    <string name="journeystart">Start Trip</string>
+    <string name="journeyend">End</string>
+    <string name="estfare">"Est. Fare: "</string>
+    <string name="directDist">"Direct Dist.: "</string>
+    <string name="directFare">"Direct Fare: "</string>
+    <string name="reset">Reset</string>
+    <string name="radioAuto">Auto</string>
+    <string name="radioTaxi">Taxi</string>
+    <string name="lblnightfare">" (Night)"</string>
+    <string name="starttrip">"Start Trip"</string>
+    <string name="endtrip">"End Trip"</string>
+    <string name="gpsfix">"Getting GPS fix"</string>
+    <string name="x">"X"</string>
+    <string name="waitmove">"Waiting to move"</string>
+    <string name="actualTripReadings">"Add/Edit Trip Deails"</string>
+
+    <string name="meter_running">"Meter Running"</string>
+    <string name="meter_stopped">"Meter Stopped"</string>
+    <string name="remote_service_label">"Auto Taxi Meter"</string>
+    <!--<string name="location_service_label">"Auto Taxi Meter"</string>-->
+    <string name="min_rs_meter">"1"</string>
+    <string name="min_ps_meter">"00"</string>
+    <!--<string name="gps_enable">"GPS is disabled, SmartShehar Auto Meter will not start till GPS is enabled"</string>-->
+    <string name="end_trip">" Has your Auto/Taxi trip ended?"</string>
+    <string name="complainttitle">"RTO Complaint Form"</string>
+    <string name="tvvehicleno">"Motor Vehicle no. "</string>
+    <string name="etvehiclenohint">"Auto/Taxi number"</string>
+    <string name="lblDate">"Date"</string>
+    <string name="lblTime">"Time"</string>
+    <string name="etPlaceOfOccurenceHint">"Place of Occurrence"</string>
+    <string name="hintFrom">"From"</string>
+    <string name="hintTo">"To"</string>
+    <string name="refusedToPly">"Refused to Ply"</string>
+    <string name="demandedExtraFare">"Demanded/Charged Extra Fare"</string>
+    <string name="hintMeterReading">"Meter Reading"</string>
+    <string name="hintFareDemanded">"Fare Demanded"</string>
+    <string name="indecentBehaviour">"Indecent Behaviour"</string>
+    <string name="faultyMeter">"Faulty Meter"</string>
+    <string name="otherPassengers">"Charged fare from other passengers and allowed to travel with complainant</string>
+    <string name="hintRsPs">"Rs.Ps."</string>
+    <string name="otherComplaints">"Any other complaints"</string>
+    <string name="fullName">"Full Name"</string>
+    <string name="emailId">"Email Id. "</string>
+    <string name="mobileNo">"Mobile No. "</string>
+    <string name="splashnote">"Splash Image"</string>
+    <string name="unknown">"Unknown (waiting for GPS)"</string>
+    <string name="noSavedTrip">"No Saved Trips yet"</string>
+    <string name="meterStoppedBySystem">"Meter Stopped by system"</string>
+
+    <string name="done">"Done"</string>
+    <string name="complain">"Complain"</string>
+
+    <string name="zerom">"0 m"</string>
+    <string name="lblOk">"OK"</string>
+    <string name="lblCancel">"Cancel"</string>
+    <string name="estTripDistance">Est. Trip Dist.</string>
+    <string name="tripsummary">Trip Summary</string>
+    <string name="youtraveled">You traveled approximately</string>
+    <string name="yourcost">"It cost you (around) "</string>
+    <string name="traveldist">"Distance"</string>
+    <string name="tripTime">"Time"</string>
+    <string name="waitingTime">"Wait"</string>
+    <string name="speed">"Speed"</string>
+    <string name="atTrip">"H"</string>
+    <string name="atTaxi">"T"</string>
+    <string name="atAuto">"A"</string>
+    <string name="atTripStart">"S"</string>
+    <string name="atTripEnd">"E"</string>
+    <string name="atTripCamceled">"A_C"</string>
+
+
+    <!-- Contact Us -->
+    <string name="triplist">"My Trips"</string>
+
+    <!--<string name="updates">Added estimated fare option\n
+    Fixes to Meter\n
+    http://www.smartshehar.com\n
+    http://www.facebook.com/smartshehar\n
+    email: smartshehar@gmail.com
+    </string>-->
+    <!--<string name="eula">
+    By downloading any application from SmartShehar.com (here after referred to as "The Company") installing or using this application or any portion thereof ("Application"), you agree to the following terms and conditions (the "Terms and Conditions").\n
+
+    1. USE OF APPLICATION\n
+    a. The Company grants you the non-exclusive, non-transferable, limited right and license to install and use this Application solely and exclusively for your personal use.\n
+    b. You may not use the Application in any manner that could damage, disable, over-burden, or impair the Application (or servers or networks connected to the Application), nor may you use the Application in any manner that could interfere with any other party\'s use and enjoyment of the Application (or servers or networks connected to the Application).
+    c. You agree that you are solely responsible for (and that The Company has no responsibility to you or to any third party for) your use of the Application, any breach of your obligations under the Terms and Conditions, and for the consequences (including any loss or damage which The Company may suffer) of any such breach.\n
+
+    2. PROPRIETARY RIGHTS\n
+    You acknowledge that (a) the Application contains proprietary and confidential information that is protected by applicable intellectual property and other laws, and (b) The Company and/or third parties own all right, title and interest in and to the Application and content, excluding content provided by you, that may be presented or accessed through the Application, including without limitation all Intellectual Property Rights therein and thereto. "Intellectual Property Rights" means any and all rights existing from time to time under patent law, copyright law, trade secret law, trademark law, unfair competition law, and any and all other proprietary rights, and any and all applications, renewals, extensions and restorations thereof, now or hereafter in force and effect worldwide. You agree that you will not, and will not allow any third party to, (i) copy, sell, license, distribute, transfer, modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from the Application or content that may be presented or accessed through the Application for any purpose, unless otherwise permitted, (ii) take any action to circumvent or defeat the security or content usage rules provided, deployed or enforced by any functionality (including without limitation digital rights management functionality) contained in the Application, (iii) use the Application to access, copy, transfer, transcode or retransmit content in violation of any law or third party rights, or (iv) remove, obscure, or alter The Company\'s or any third partyâ€™s copyright notices, trademarks, or other proprietary rights notices affixed to or contained within or accessed in conjunction with or through the Application.\n
+
+    3. THE COMPANY TERMS OF SERVICE AND PRIVACY POLICY\n
+    a. The Company\'s Privacy Policy (located at http://mesn.org/bestbus/privacypolicy.html) explains how The Company treats your information and protects your privacy when you use the Application. You agree to the use of your data in accordance with The Company\'s privacy policies.\n
+    b. The Application may contain features that are used in conjunction with The Company\'s search and other services. Accordingly, your use of such features of the Application is also governed by The Company\'s Terms of Service located at http://mesn.org/bestbus/terms_of_service.html, The Company\'s Privacy Policy located at http://www.smartshehar.com/privacypolicy.html, as well as any applicable The Company Service-specific Terms of Service and Privacy Policy, which may be updated from time to time and without notice.\n
+
+    4. TERMINATION\n
+    These Terms and Conditions will continue to apply until terminated by either you or The Company as set forth below. You may terminate these Terms and Conditions at any time by permanently deleting the Application from your mobile device in its entirety. Your rights automatically and immediately terminate without notice from The Company or any Third Party if you fail to comply with any provision of these Terms and Conditions. In such event, you must immediately delete the Application.\n
+
+    5. INDEMNITY\n
+    To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless The Company, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys fees) arising out of or accruing from your use of the Application, including your downloading, installation, or use of the Application, or your violation of these Terms and Conditions.\n
+
+    6. DISCLAIMER OF WARRANTIES\n
+    a. YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE APPLICATION IS AT YOUR SOLE DISCRETION AND RISK AND THAT THE APPLICATION IS PROVIDED AS IS AND AS AVAILABLE WITHOUT WARRANTY OF ANY KIND.\n
+    b. YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR MOBILE DEVICE, OR OTHER DEVICE, OR LOSS OF DATA THAT RESULTS FROM SUCH USE.\n
+    c. THE COMPANY FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, WITH RESPECT TO THE APPLICATION.\n
+    d. THE APPLICATION IS NOT INTENDED FOR USE IN THE OPERATION OF NUCLEAR FACILITIES, LIFE SUPPORT SYSTEMS, EMERGENCY COMMUNICATIONS, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL SYSTEMS, OR ANY OTHER ACTIVITIES IN WHICH THE FAILURE OF THE APPLICATION COULD LEAD TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE.\n
+
+    7. LIMITATION OF LIABILITY\n
+    YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE COMPANY, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS ARE NOT LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU THROUGH YOUR USE OF THE APPLICATION, INCLUDING ANY LOSS OF DATA OR DAMAGE TO YOUR MOBILE DEVICE, WHETHER OR NOT THE COMPANY OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.\n
+
+    8. MISCELLANEOUS\n
+    a. These Terms and Conditions constitute the entire Agreement between you and The Company relating to the Application and govern your use of the Application, and completely replace any prior or contemporaneous agreements between you and The Company regarding the Application.\n
+    b. The failure of The Company to exercise or enforce any right or provision of these Terms and Conditions does not constitute a waiver of such right or provision, which will still be available to The Company.\n
+    c. If any court of law, having the jurisdiction to decide on this matter, rules that any provision of these Terms and Conditions is invalid, then that provision will be removed from the Terms and Conditions without affecting the rest of the Terms and Conditions. The remaining provisions of these Terms and Conditions will continue to be valid and enforceable.\n
+    d. The rights granted in these Terms and Conditions may not be assigned or transferred by either you or The Company without the prior written approval of the other party. Neither you nor The Company are permitted to delegate their responsibilities or obligations under these Terms and Conditions without the prior written approval of the other party.\n
+    e. These Terms and Conditions and your relationship with The Company under these Terms and Conditions will be governed by the laws of the State of California without regard to its conflict of laws provisions. You and The Company agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from these Terms and Conditions. Notwithstanding this, you agree that The Company will still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.\n
+    </string>-->
+    <string name="from">"From: "</string>
+    <string name="to">"To: "</string>
+    <string name="blank">" "</string>
+    <string name="ttlFare">Fare</string>
+    <string name="ttlDayFare">Day Fare</string>
+    <string name="ttlNaightFare">Night Fare</string>
+    <string name="ttlDist">Distance(km.)</string>
+    <string name="fareCharged">Charged</string>
+    <string name="distance">Dist.</string>
+    <string name="ttlActual">Actual</string>
+    <string name="ttlByPhone">By Phone</string>
+    <string name="ttlEst">Estimated</string>
+    <string name="ttlStartTime">Start: </string>
+    <string name="ttlDestTime">Destination: </string>
+    <string name="ttlElapsedTime">"Elapsed: "</string>
+    <string name="tripdate">Date</string>
+    <string name="autoTaxiNo">Auto/Taxi No.</string>
+    <string name="meter">Meter</string>
+    <string name="distancedigital">"Distance digital meter (km)"</string>
+    <string name="menu_delete">Delete Trip</string>
+    <string name="deleteTrip">Delete Trip</string>
+    <string name="am_u">Auto - Mech. Uncalibrated (1.6 km)</string>
+    <string name="am_us">Auto - Mech. Uncalib. (1.6 km)</string>
+    <string name="am_c">Auto - Mech. Calibrated (1.5 km)</string>
+    <string name="am_cs">Auto - Mech. Calib. (1.5 km)</string>
+    <string name="ad_u">Auto - Digital Uncalibrated (Rs.12)</string>
+    <string name="ad_us">Auto - Dig. Uncalib. (Rs.12)</string>
+    <string name="ad_c">Auto</string>
+    <string name="ad_cs">Auto - Dig. Calib. (Rs.15)</string>
+    <string name="tm_u">Taxi - Mech. Uncalibrated (1.6 km)</string>
+    <string name="tm_us">Taxi - Mech. Uncalib. (1.6 km)</string>
+    <string name="tm_c">Taxi - Mech. Calibrated (1.5 km)</string>
+    <string name="tm_cs">Taxi - Mech. Calib. (1.5 km)</string>
+    <string name="td_u">Taxi - Digital Uncalibrated (Rs.17)</string>
+    <string name="td_us">Taxi - Dig. Uncalib. (Rs.17)</string>
+    <string name="td_c">Taxi</string>
+    <string name="td_cs">Taxi - Digital Calibrated (Rs.19)</string>
+    <string name="oldCards">Old Tarrif Cards</string>
+    <string name="radioTypeMechanical">Mechanical</string>
+    <string name="radioDigital">Digital</string>
+    <string name="home_rtocards">RTO Cards</string>
+    <string name="home_estimatedfare">Fare\nEstimate</string>
+    <string name="newdayfare">Day Fare</string>
+    <string name="nightfare">Night Fare</string>
+    <string name="olddayfare">Old Day Fare</string>
+    <string name="oldnightfare">Old Night Fare</string>
+    <string name="selectCity">Select City</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_farecalculator">Fare\nCalculator</string>
+    <string name="night">Night</string>
+    <string name="dummytext">Dummy Text</string>
+
+    <string name="share"><u>Share</u></string>
+
+    <!-- Google plus vars -->
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="revoke_access_button_name">Revoke access</string>
+    <string name="disconnect_button_name">Disconnect</string>
+    <string name="share_title">Prefill Text (optional)</string>
+    <string name="share_prefill_text">Welcome to the Google+ platform.</string>
+
+    <string name="offline_status_prefix">Offline:\u0020</string>
+    <string name="offline_server_error">Server error</string>
+    <string name="default_status" />
+    <string name="greeting_status">Welcome, %s.</string>
+    <string name="greeting_status_sign_in_required">Sign-in required</string>
+    <string name="greeting_status_error">Error signing in: %s.</string>
+    <string name="loading_status">Loading…</string>
+    <string name="signing_in_status">Signing in with Google+.</string>
+    <string name="signed_in_status">Signed in as \"%s\".</string>
+
+    <string name="unknown_person">Unknown</string>
+    <string name="signed_out_status">Signed out.</string>
+    <string name="revoke_access_status">Revoked access.</string>
+    <string name="revoke_access_error_status">Unable to revoke access.</string>
+
+    <string name="plus_write_moment_status">Saving moment</string>
+    <string name="plus_remove_moment_status">Removing moment</string>
+
+    <string name="plus_one_small_name">Small +1 button</string>
+    <string name="plus_one_medium_name">Medium +1 button</string>
+    <string name="plus_one_tall_name">Tall +1 button</string>
+    <string name="plus_one_standard_name">Standard +1 button</string>
+    <string name="plus_one_standard_ann_name">Standard +1 button (with inline annotation)</string>
+
+    <string name="plus_example_deep_link_id">/+/mobile/android/</string>
+    <string name="plus_example_deep_link_url">
+        https://developers.google.com/+/mobile/android/
+    </string>
+    <string name="plus_generic_error">Sign in with Google is not available.</string>
+    <string name="progress_message">Signing in to Google&#8230;</string>
+    <!-- Google plus vars -->
+    <string name="MyLocation">My Location</string>
+    <string name="MyDestination">My Destination</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="forHire">For hire near you</string>
+    <string name="sharingnear">Sharing near you</string>
+    <string name="titleForHire">For Hire</string>
+    <string name="call">Call</string>
+    <string name="more">More</string>
+    <string name="want_to_share">I want to share</string>
+    <string name="awayfromyou">away from you</string>
+    <string name="none_for_hire">No vehicles near you for hire</string>
+    <string name="none_sharing">No shared vehciles available now</string>
+    <string name="page">Page</string>
+    <string name="joinShared">Join a shared ride</string>
+    <string name="or">OR</string>
+    <string name="search_hint">Search Location</string>
+    <string name="waitingForDrivers">Waiting for drivers to respond ..</string>
+    <string name="getauto">Get Auto</string>
+    <string name="cancel">Cancel</string>
+    <string name="refuse">Refuse</string>
+    <string name="accept">Accept</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_user_registration">User Registration</string>
+    <string name="username">Username</string>
+    <string name="contactno">Contact No.</string>
+    <string name="name">Full Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="title_activity_select_ward">Wards List</string>
+    <string name="thanking_msg">Your local MLA has endorsed and supported this initiative to improve your neighborhood.</string>
+    <string name="title_activity_view_isssue_on_map_act">ViewIsssueOnMap_act</string>
+    <!--<string name="app_name">Leanback ViewIssueOnMapAct Title</string>-->
+    <string name="browse_title"><![CDATA[Videos by Your Company]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="vertical_grid_title"><![CDATA[Vertical Video Grid]]></string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="init_text">00:00</string>
+    <string name="play_pause_description">Play Pause Button</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="no_video_found">No video was found</string>
+    <string name="about_app">About DemoCast Player</string>
+    <string name="version">Version: %1$s</string>
+    <string name="popular_header">Popular Videos</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+    <string name="should_start">shouldStart</string>
+    <string name="start_position">startPosition</string>
+    <string name="search_results">Search Results</string>
+    <string name="group_name">Group Name</string>
+    <string name="group_area">Group Area</string>
+    <string name="group_description">Group Description</string>
+    <string name="pincode">Pincode</string>
+    <string name="email_id">Email id</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="group_type">Group Type</string>
+    <string name="issue_submitted_successfully">Your issue is received &amp; pending acceptance.
+        Please allow up to 24 hours for our team to accept the issue.</string>
+    <string name="issue_submit_to_smartshehar">Issue sent</string>
+    <string name="step_one">Issue Submission</string>
+    <string name="step_two">Issue Approval</string>
+    <string name="step_three">Letter Submission</string>
+    <string name="step_four">Progress Update</string>
+    <string name="yourcomment">Your Comments</string>
+    <string name="step_five">Issue Closure</string>
+    <string name="step_six">Do you agree that the complaint is closed/resolved</string>
+    <string name="upload_printed_letter">You can submit a printed copy of email</string>
+    <string name="is_cloased">Is issue closed?</string>
+    <string name="show_comments">Show Comments</string>
+    <string name="select_issue">Touch here to select issue category</string>
+    <string name="approved">Thank You for submitting an issue using SmartShehar platform. Your issue is now accepted.</string>
+    <string name="help_after_approval">You can submit a printed copy of email generated by the App to your local municipal office for faster resolution of the issue.</string>
+    <string name="ward_office_details">You can submit the complaint here below: </string>
+    <string name="uploaded">Complaint reported to local authorities</string>
+    <string name="progress_update">Use this space to report progress or update on the issue if any</string>
+    <string name="resolved_status">Complaint marked as closed/resolved</string>
+    <string name="rejected">Issue rejected by authority</string>
+    <string name="fromDate">From Date</string>
+    <string name="toDate">To Date</string>
+    <string name="postal">Postal Code</string>
+    <string name="filterbynone">Filter by none</string>
+    <string name="closedissue">Closed Issue</string>
+    <string name="resolvedissue">Resolved Issue</string>
+    <string name="like"><u>Like</u></string>
+    <string name="comment"><u>Comment</u></string>
+    <string name="bypostalcode">By Postal Code</string>
+    <string name="bydate">By Date</string>
+    <string name="bycategory">By Category</string>
+    <string name="byward">By Ward</string>
+    <string name="followup"><u>FollowUp</u></string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="listhand">List hand</string>
+    <!-- Error messages -->
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_inaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="oops">Oops</string>
+    <string name="noissue">No issues found</string>
+    <string name="total">Total</string>
+    <string name="totalissues">Issues in your City</string>
+    <string name="nearbyissues">Issues reported near you</string>
+    <string name="title_activity_view_issue_on_map">Issue on Map</string>
+    <string name="title_activity_issue_witin_specific_area">IssueWitinSpecificArea</string>
+    <string name="showall">Show all</string>
+    <string name="title_activity_act_train_dashboard">Smartshehar Train</string>
+    <string name="title_activity_act_list_of_issuse">Issues</string>
+    <string name="localapps">Local Apps</string>
+    <string name="downloadapps">Download Apps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_group_registration">Group Registration</string>
+    <string name="title_activity_act_local_offers">Local Offers</string>
+    <string name="title_activity_act_notification">Smartshehar</string>
+    <string name="title_activity_act_followup_form">Follow Up</string>
+    <string name="gcm_defaultSenderId">776836592575</string>
+    <!--- train app-->
+    <string name="pageSendSMS">"/TSS</string>
+    <string name="description_logo">SmartShehar Mumbai Trains</string>
+
+
+    <string name="appNameShort">"SSD"</string>
+    <string name="appCode">D</string>
+    <string name="home_fastinfo">"Fast Info"</string>
+    <string name="home_railmap">"Rail Map"</string>
+    <string name="home_route">"Route"</string>
+    <string name="waiting_location">Waiting for location .. "</string>
+    <string name="train_destinations">Getting Train Destinations .."</string>
+    <string name="change_time">Time</string>
+    <string name="platform">Plt.</string>
+    <string name="sloworfast">S/F</string>
+    <string name="eta">Time</string>
+    <string name="RouteStart">""From: "</string>
+    <string name="urlLink">(<u>More..</u>)</string>
+    <string name="line">Ln.</string>
+    <string name="oneMonthPass">1M</string>
+    <string name="threeMonthPass">3M</string>
+    <string name="sixMonthPass">6M</string>
+    <string name="oneYearhPass">1Y</string>
+    <string name="trainclass">Class</string>
+
+    <string name="selectRecentStation">"Select Recent Station"</string>
+    <string name="gettingStations">"Getting Stations"</string>
+    <string name="mergeTowards">"Merge/Split Destinations"</string>
+    <string name="enterStartStation">"Start Station e.g. Churchgate (WR)"</string>
+    <string name="enterDestStation">"Destination Station e.g. Vashi (HR, TH)"</string>
+    <!-- Activities -->
+    <string name="dashboardTitle">"Dashboard"</string>
+    <string name="faresTitle">"Fares"</string>
+    <string name="fareTrain">Fare</string>
+    <!-- Activities -->
+    <string name="atFirstUse">"T_F"</string>
+
+
+    <string name="atFastInfoLocation">"TI_L"</string>
+    <string name="atTIPlus">"TI_+"</string>
+    <string name="atMerge">"TI_M"</string>
+    <string name="atUnMerge">"TI_U"</string>
+    <string name="atTITrip">"TI_T"</string>
+
+    <string name="atTrainRouteLocation">"TR_L"</string>
+    <string name="atMore">"TR_M"</string>
+    <string name="atSendSMS">"TR_SMS"</string>
+
+    <string name="atTrainJourney">"T_J"</string>
+    <string name="atRunSmartShehar">"T_RS"</string>
+
+    <string name="atFilterTrains">"TR_F"</string>
+    <string name="atShowRoute">"TR_R"</string>
+    <string name="atFlipTrip">"TR_FT"</string>
+    <string name="atFlipTripLong">"Flip_Trip"</string>
+    <string name="atChangeTime">"TR_CT"</string>
+    <string name="atChangeTimeLong">"Change_Time"</string>
+    <string name="atRecentTrip">"TR_RT"</string>
+    <string name="atShowAd">"TR_AD"</string>
+
+
+    <string name="pageFastInfo">"/TI</string>
+    <string name="pageFastInfoScheduleLong">"/Train_FastInfoSchedule</string>
+    <string name="pageFastInfoSchedule">"/TFS</string>
+    <string name="pageFastInfoLong">"/Train_FastInfo</string>
+    <string name="pageRoute">"/TR</string>
+    <string name="pageRouteLong">"/Train_Route</string>
+
+    <string name="pageSendSMSLong">"/Send SMS</string>
+    <string name="pageFare">"/T$</string>
+    <string name="pageFareLong">"/Train_Fares</string>
+
+    <string name="pageMap">"/TM</string>
+    <string name="pageMapLong">"/Train_Map</string>
+    <string name="pageTrip">"/TT</string>
+    <string name="pageTripLong">"/Train_Trip</string>
+    <string name="carttl">"Car"</string>
+    <string name="sTotalTravelTime">"Travel Time"</string>
+    <string name="recentTrips">"Recent"</string>
+    <string name="reverseTrip">"Flip"</string>
+    <string name="btnplus">+</string>
+    <string name="btnminus">-</string>
+    <string name="gettingLocation">"Getting nearest station &#8230;"</string>
+    <string name="back">&lt;</string>
+
+    <string name="towardsStation">Towards</string>
+    <string name="trainTo">-</string>
+    <string name="ganalyticsid">"&#8211;;32381506&#8211;2"</string>
+    <string name="longWait">"Long wait for this train"</string>
+    <string name="routeBeta">"This feature is Beta\nPlease send feedback to - \nfeedback@smartshehar.com"</string>
+
+    <string name="feedback1">Feedback</string>
+
+    <string-array name="route_action_list">
+        <item>Default</item>
+        <item>Direct</item>
+        <item>Fast</item>
+        <item>Slow</item>
+    </string-array>
+    <string name="spl">Spl</string>
+    <string name="jrny">Jrny</string>
+    <string name="home_fares">Fares</string>
+    <string name="getfares">Get Fares</string>
+    <string name="fare">Fare</string>
+    <string name="fare1st">Fare 1st</string>
+    <string name="second">2nd</string>
+    <string name="first">1st</string>
+    <string name="second1m">2nd 1m</string>
+    <string name="second3m">2nd 3m</string>
+    <string name="first1m">1st 1m</string>
+    <string name="first3m">1st 3m</string>
+    <string name="setuphomework">Setup Home/Work</string>
+
+    <string name="Sort">menu_sort</string>
+    <string name="menu_sort">Sort</string>
+    <string name="menu_locate">Get Location</string>
+    <string name="Work">Work</string>
+    <string name="Home">Home</string>
+    <string name="RefreshHomeWork">Go to Settings and come back to refresh Home/Work trains</string>
+
+    <string name="nomegablock">"No Mega Block information at this time "</string>
+    <string name="home_megablock">Mega Block</string>
+    <string name="oneway2nd">2nd one way</string>
+    <string name="oneway1st">1st one way</string>
+    <string name="pass1m">2nd one month Pass</string>
+    <string name="pass1m1st">1st one month Pass</string>
+    <string name="pass3m">2nd three month Pass</string>
+    <string name="pass3m1st">1st three month Pass</string>
+    <string name="secondtext">Second</string>
+    <string name="firstText">First</string>
+    <string name="oneway">One Way</string>
+    <string name="onemonth">One Month</string>
+    <string name="threemonth">Three Months</string>
+    <string name="menu_fare">Fare</string>
+    <string name="help_fare">Fare is not available for this route\nYou can help other SmartShehar.com users by emailing the fares for this route to <a href="userfeedback@smartshehar.com">User Feedback (userfeedback@smartshehar.com)</a></string>
+    <string name="sendSMS">Send SMS</string>
+    <string name="smsRoute">SMS Route</string>
+    <string name="courtesySmartShehar">http://SmartShehar.com</string>
+    <string name="startInternet">"Start internet for Mega block and touch Refresh"</string>
+    <string name="SMS">SMS</string>
+    <string name="sixmonth">Six Months</string>
+    <string name="oneyear">One Year</string>
+    <string name="title_activity_act_splash_screen">ActSplashScreen</string>
+
+
+    <string name="title_activity_act_train_map">ActTrainMap</string>
+    <string name="title_activity_act_fares">ActFares</string>
+    <string name="title_activity_act_fast_info">ActFastInfo</string>
+    <string name="title_activity_act_train_trip">ActTrainTrip</string>
+    <string name="title_activity_act_train_route">ActTrainRoute</string>
+    <string name="title_activity_act_send_sms">ActSendSMS</string>
+    <string name="title_activity_act_pref">ActPref</string>
+    <string name="title_activity_act_meg_block">ActMegBlock</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_act_mega_block_more_detail">Mega Block</string>
+    <string name="title_activity_search_station">SearchStationActivity</string>
+
+    <!--auto taxi-->
+    <string name="pageAutoTaxiDashboard">S_AT_D</string>
+    <!--auto taxi-->
+    <string name="title_activity_act_filter_by_category">ActFilterByCategory</string>
+    <string name="title_activity_act_ip_comments">ActIpComments</string>
+    <string name="title_activity_act_rating_comment">ActRatingComment</string>
+    <string name="title_activity_act_category_selection">ActCategorySelection</string>
+    <string name="title_activity_act_gesture">ActGesture</string>
+
+
+    <!-- issue categories array-->
+    <string-array name="category">
+        <item name="footpath">Footpath</item>
+        <item name="missingfootpath">Missing Footpath</item>
+        <item name="unevenfootpath">Uneven/Broken Footpath</item>
+        <item name="unevenpaver">Uneven/Broken Paver Blocks</item>
+        <item name="enchroachedfootpath">Enchroached Footpath</item>
+        <item name="dirtyfootpath">Dirty Footpath</item>
+        <item name="potholes">Potholes</item>
+        <item name="potholesroad">Potholes on the road</item>
+        <item name="unevenroad">Uneven Road Surface</item>
+        <item name="duguproad">Dug Up Road</item>
+        <item name="shoddy">Shoddy Repair Work</item>
+        <item name="garbage">Garbage</item>
+        <item name="accumulated">Accumulated Garbage</item>
+        <item name="notpickedup">Garbage not picked up</item>
+        <item name="sweepersnot">Sweepers not being seen</item>
+        <item name="constrution">Construction Debris dumped</item>
+        <item name="beingbumt">Garbage being bumt</item>
+        <item name="drains">Drains/Nullahs</item>
+        <item name="opendrain">Open Drain/Sewage Line</item>
+        <item name="clogged">Clogged/Overflowing Sewage Line</item>
+        <item name="sanitation">Sanitation</item>
+        <item name="openurination">Open Defecation/Urination</item>
+        <item name="dog">Dog Droppings</item>
+        <item name="unclean">Unclean Public Restroom</item>
+        <item name="pests">Pests</item>
+        <item name="mosquitos">Mosquitos</item>
+        <item name="straydogs">Stray dogs gangs</item>
+        <item name="pigeonmenace">Pigeon Menace</item>
+        <item name="hawkers">Hawkers</item>
+        <item name="illegalfruit">Illegal Fruit/Vegetable sellers</item>
+        <item name="illegalfood">Illegal Food Stalls</item>
+        <item name="tookfootpath">Hawkers took my footpath</item>
+        <item name="enchroachment">Enchroachment</item>
+        <item name="extension">Illegal Extension to restaurants</item>
+        <item name="illegalconstrucion">Illegal Consstruction</item>
+        <item name="hoarding">Hoardings/Banners</item>
+        <item name="beach">Beach Encroachments</item>
+        <item name="womensafety">Women Safety</item>
+        <item name="rampant">Rampant Eveteasing</item>
+        <item name="antisocial">Anti-Social Elements</item>
+        <item name="general">General</item>
+        <item name="insufficient">Insufficient Street Lighting</item>
+        <item name="purse">Purse Snatching Incidents</item>
+        <item name="thefts">Thefts/Robberies in the area</item>
+        <item name="fire">Fire Hazards</item>
+        <item name="water">Water</item>
+        <item name="waterscarcity">Water Scarcity</item>
+        <item name="lowwater">Low Water Pressure</item>
+        <item name="leakwater">Leak in Water Lines</item>
+        <item name="contaminated">Contaminated Water Supply</item>
+        <item name="electricity">Electricity</item>
+        <item name="illegleelectricity">Illegal Electricity Connections</item>
+        <item name="irregular">Irregular Electricity Supply</item>
+        <item name="openspaces">Open Spaces</item>
+        <item name="garden">Encroached Garden</item>
+        <item name="antiactivity">Anti Social Elements/Activity</item>
+        <item name="poorly">Poorly Maintained park/garden</item>
+        <item name="greencover">Green Cover</item>
+        <item name="treefelling">Tree felling</item>
+        <item name="deliberately">Deliberately Poisoned Trees</item>
+        <item name="infested">Infested/Deseased Trees</item>
+        <item name="mangroves">Mangroves in danger</item>
+        <item name="fogging">Fogging</item>
+        <item name="treetrimming">Tree Trimming</item>
+        <item name="scraping">Scraping</item>
+    </string-array>
+    <!-- issue categories array-->
+    <string name="facebook_app_id">614883915332333</string>
+
+    <!-- Bus App-->
+    <string name="search_bus_no">Search by Bus No</string>
+    <string name="search_stop">Enter stop name (e.g. Khodadad)</string>
+    <string name="schedule">Schedule</string>
+    <string name="title_activity_act_app_user_id">ActAppUserId</string>
+    <string name="title_activity_act_issue_report">ActIssueReport</string>
+    <string name="title_activity_act_verify_number">Verify Number</string>
+    <string name="title_activity_act_dashboard_report">ActDashboardReport</string>
+    <string name="enter_message">Enter message</string>
+    <string name="send">SEND</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="err_msg_name">Enter full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="title_activity_chat_room_discussion">ChatRoomDiscussionActivity</string>
+
+    <string name="action_logout">Logout</string>
+    <string name="select_address">Selected Address</string>
+    <string name="your_location">Your Loctaion</string>
+    <string name="waiting_for_gcm">Seems gcm will take some time</string>
+    <string name="txt_welcome_msg">Welcome!</string>
+    <string name="txt_login">Login</string>
+    <string name="current_location">Current location</string>
+    <string name="old_location">This is your old location. Please touch</string>
+    <string name="start_gps">Start GPS</string>
+    <string name="to_refresh">to refresh</string>
+    <string name="arrow">arrow</string>
+    <string name="two_dashes">--</string>
+    <string name="arrow_red">arrow_red</string>
+    <string name="permission_all">All permission is needed to access Location, SMS,etc.</string>
+    <string name="somthing_wrong">Oops, Something went wrong!</string>
+    <string name="no_net">You are not connected to the Internet. Please turn on the internet to see issues logged near by you</string>
+    <string name="location_read_contact">To use Smartshehar App, you need Location permission  and Read contact permission. </string>
+    <string name="camera__sms_permission">To use Smartshehar App, you need CAMERA  and SEND_SMS permission permission</string>
+    <string name="sms_permission">To use Smartshehar App, you need SEND_SMS permission permission</string>
+    <string name="camera_permission">To use Smartshehar App, you need CAMERA  and SEND_SMS permission permission</string>
+    <string name="read_write_storage">To use Smartshehar App, you need WRITE_EXTERNAL_STORAGE permission and SMS permission</string>
+</resources>
+

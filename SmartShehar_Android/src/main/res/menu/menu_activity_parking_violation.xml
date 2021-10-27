@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    tools:context="smartsheharcom.www.citizen.ActivityParkingViolation">
+
+
+    <item
+        android:id="@+id/refreshLocation"
+        android:icon="@mipmap/ic_gps_white"
+        android:title="@string/refreshLocation"
+        yourapp:showAsAction="always|collapseActionView"
+        />
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="My Information">
+        <EditTextPreference
+            android:key="pref_myname"
+            android:summary="Your name to be attached to emergency email"
+            android:title="My Name" />
+        <EditTextPreference
+            android:inputType="number"
+            android:key="pref_mynumber"
+            android:summary="Your Phone number for emergency email contacts"
+            android:title="My number" />
+        <EditTextPreference
+            android:inputType="text|textEmailAddress"
+            android:key="pref_myemail"
+            android:summary="Your email id"
+            android:title="My email" />
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="Emergency Information">
+        <Preference
+            android:key="pref_emergency_contact1"
+            android:summary="Pick a contact from your contact list"
+            android:title="Emergency Contact 1" />
+        <EditTextPreference
+            android:inputType="text"
+            android:key="pref_cc1_msg"
+            android:title="Emergency Message 1" />
+        <Preference
+            android:key="pref_emergency_contact2"
+            android:summary="Pick a contact from your contact list"
+            android:title="Emergency Contact 2" />
+        <EditTextPreference
+            android:inputType="text"
+            android:key="pref_cc2_msg"
+            android:title="Emergency Message 2" />
+        <Preference
+            android:key="pref_emergency_contact3"
+            android:summary="Pick a contact from your contact list"
+            android:title="Emergency Contact 3" />
+        <EditTextPreference
+            android:inputType="text"
+            android:key="pref_cc3_msg"
+            android:title="Emergency Message 3" />
+
+    </PreferenceScreen>
+  <!--  <ListPreference
+        android:defaultValue="MUMBAI"
+        android:key="city"
+        android:summary="Select City"
+        android:title="City" />-->
+</PreferenceScreen>

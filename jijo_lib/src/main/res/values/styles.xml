@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="colorRowBold" parent="@android:style/TextAppearance">
+        <item name="android:colorBackground">#fffaf0</item>
+        <item name="android:textColor">#ff232323</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="colorRow" parent="@android:style/TextAppearance">
+        <item name="android:colorBackground">#fffaf0</item>
+        <item name="android:textColor">#ff0D0001</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="colorRowWhiteText" parent="@android:style/TextAppearance">
+        <item name="android:colorBackground">#fffaf0</item>
+        <item name="android:textColor">#ff0D0001</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="hdr" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ff232323</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ttl">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Start with the Holographic Light theme -->
+
+
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent_1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="nearStop">
+        <item name="android:background">#fffaf0</item>
+        <item name="android:height">20sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="body">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="hdr2">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="dist">
+        <item name="android:background">#fffaf0</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textNoSuggestions|none</item>
+        <item name="android:textColorHint">@color/DarkGrey</item>
+        <item name="android:background">@color/BackgroundLight</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="tabTextStyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/tabshapebehind</item>
+        <item name="android:textAppearance">@style/ttl</item>
+    </style>
+
+    <style name="tab">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="GotItDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent_white</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyTheme" parent="MyTheme.Base"></style>
+    <!-- Base theme applied no matter what API -->
+    <style name="MyTheme.Base" parent="@android:style/Theme.Holo.Light">
+        <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+        <item name="android:windowNoTitle">true</item>
+        <!--We will be using the toolbar so no need to show ActionBar-->
+        <item name="windowActionBar">true</item>
+        <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">#2196F3</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">#1976D2</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">#FF4081</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+            colorControlHighlight and colorSwitchThumbNormal. -->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"></style>
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#512DA8</item>
+        <item name="colorAccent">#009688</item>
+        <item name="colorControlHighlight">#009688</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DIALOG" parent="android:Theme">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:windowBackground">@color/transparent_white</item>
+    </style>
+
+</resources>

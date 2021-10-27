@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/BackgroundLight">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/traintime"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/indicatorspeedcode"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/colorRowBold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/platform"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/colorRow"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/linecode"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/colorRowBold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/car"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/colorRowBold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/splcode"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:src="@mipmap/ic_ls"
+                android:textAppearance="@style/colorRowBold"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/firststation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textAppearance="@style/colorRow" />
+
+            <TextView
+                android:id="@+id/laststation"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/colorRow" />
+
+            <TextView
+                android:id="@+id/trainname"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/colorRow" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

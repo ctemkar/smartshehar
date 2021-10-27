@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/bbCommuting"
+        android:icon="@drawable/ic_commuting"
+        android:orderInCategory="100"
+        android:title="@string/menucommuting"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/bbGovernance"
+        android:icon="@drawable/ic_governance"
+        android:orderInCategory="100"
+        android:title="@string/menugovernance"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/bbOthers"
+        android:icon="@drawable/ic_others"
+        android:orderInCategory="100"
+        android:title="@string/menuother"
+        app:showAsAction="ifRoom|withText" />
+</menu>

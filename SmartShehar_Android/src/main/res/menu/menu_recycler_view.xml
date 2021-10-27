@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    tools:context="com.smartshehar.dashboard.app.ui.MyComplaintList">
+    <item
+        android:id="@+id/refreshComplaint"
+        android:icon="@mipmap/ic_refresh"
+        android:title="@string/refreshLocation"
+        yourapp:showAsAction="always|collapseActionView"
+        />
+</menu>

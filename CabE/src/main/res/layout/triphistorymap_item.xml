@@ -1,0 +1,107 @@
+<com.smartshehar.cabe.MapCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/map_card_vertical_margin"
+    android:layout_marginLeft="@dimen/map_card_horizontal_margin"
+    android:layout_marginRight="@dimen/map_card_horizontal_margin"
+    android:layout_marginTop="@dimen/map_card_vertical_margin"
+    android:clickable="true"
+    android:onClick="showMapDetails"
+    card_view:cardCornerRadius="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ivDriverMap"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            tools:ignore="RtlHardcoded" />
+
+        <LinearLayout
+            android:id="@+id/rl_text"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_below="@+id/ivDriverMap"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivDriverImageShow"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_person"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTripDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvTripDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDriverCarModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvTripFareRs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    tools:ignore="RelativeOverlap,RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl_text"
+            android:background="@color/BackgroundDark" />
+    </RelativeLayout>
+</com.smartshehar.cabe.MapCardView>

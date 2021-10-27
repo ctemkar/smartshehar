@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtEncroachmentH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/enchroach"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_cat_one"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtHawker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+
+            android:padding="5dp"
+            android:text="@string/hawkers"
+            android:textColor="@color/light_maroon"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/IFVS"
+            style="@style/issue_item_text"
+            android:text="@string/IFVS" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/IFS"
+            style="@style/issue_item_text"
+            android:text="@string/IFS" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/HTMF"
+            style="@style/issue_item_text"
+            android:text="@string/HTMF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_cat_two"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+
+            android:padding="5dp"
+            android:text="@string/enchroachment"
+            android:textColor="@color/light_maroon"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/IER"
+            style="@style/issue_item_text"
+            android:text="@string/IER" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/IC"
+            style="@style/issue_item_text"
+            android:text="@string/IC" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/HBN"
+            style="@style/issue_item_text"
+            android:text="@string/HBN" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/BEN"
+            style="@style/issue_item_text"
+            android:text="@string/BEN" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

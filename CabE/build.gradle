@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 51
+        multiDexEnabled true
+    }
+    signingConfigs {
+        debug {
+            storeFile file('../debug.keystore')
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+    flavorDimensions "default"
+    productFlavors {
+        alpha {
+            applicationId "com.smartshehar.cabe.alpha"
+            resValue "string", "google_maps_api_key", "AIzaSyDcluE1eOeNilJfDLrgvWL2BRS35aOr0eg"
+            resValue "string", "app_name", "α Cab-e"
+            versionName "1.04.54"
+            archivesBaseName = "Cab-e-$versionName"
+        }
+        rel {
+            applicationId "com.smartshehar.cabe"
+            resValue "string", "google_maps_api_key", "AIzaSyDcluE1eOeNilJfDLrgvWL2BRS35aOr0eg"
+            resValue "string", "app_name", "Cab-e"
+            versionName "1.04.54"
+            archivesBaseName = "Cab-e-$versionName"
+        }
+
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':smartsheharlib')
+    api project(':pgsdk')
+    api 'com.facebook.android:facebook-android-sdk:4.1.0'
+    api 'com.github.rahatarmanahmed:circularprogressview:2.4.0'
+    api 'com.sothree.slidinguppanel:library:3.0.0'
+    api 'com.googlecode.libphonenumber:libphonenumber:7.1.1'
+}

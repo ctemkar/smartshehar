@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+	<RelativeLayout
+		android:id="@+id/rlTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@color/LightBlue"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp">
+		<TextView
+			android:id="@+id/tvTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:text="@string/searching"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@android:color/black" />
+
+		<ImageView
+			android:id="@+id/ivClose"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="5dp"
+            android:src="@android:drawable/ic_delete"  />
+	</RelativeLayout>
+
+	<TextView
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		android:text="@string/getting_phone_number"
+        android:padding="5dp"
+		android:layout_gravity="center"
+		android:id="@+id/tvPhoneNo"
+        android:visibility="gone"
+        android:textSize="16sp"/>
+
+	<TextView
+		android:id="@+id/tvAddressLine1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/getting_address"
+        android:textColor="@color/black"
+        android:padding="5dp"
+		android:gravity="center_vertical"
+        android:layout_gravity="center"
+		android:textSize="16sp" />
+	<TextView
+		android:id="@+id/tvLandmark1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="@color/black"
+		android:text="@string/getting_landmark"
+        android:layout_gravity="center"
+        android:padding="5dp"
+		android:gravity="center_vertical"
+		android:textSize="16sp"/>
+</LinearLayout>

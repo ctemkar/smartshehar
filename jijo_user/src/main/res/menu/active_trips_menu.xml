@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:jijo="http://schemas.android.com/tools"
+    xmlns:jijoapp="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_location"
+        android:icon="@mipmap/ic_gps"
+        android:showAsAction="always"
+        android:title="Location" />
+
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@mipmap/ic_menu_refresh"
+        android:showAsAction="always"
+        android:title="@string/menu_refresh" />
+
+    <!--<item
+        android:id="@+id/menu_paytm"
+        android:icon="@drawable/ic_paytm"
+        android:title="Paytm"
+        jijoapp:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@mipmap/ic_helpmenu"
+        android:showAsAction="always"
+        android:title="Help" />
+
+</menu>

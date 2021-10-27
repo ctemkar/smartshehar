@@ -1,0 +1,334 @@
+{
+  "project_info": {
+    "project_number": "784677467274",
+    "firebase_url": "https://stone-dispatch-786.firebaseio.com",
+    "project_id": "stone-dispatch-786"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:e1b75d9211cbc213",
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-8kgf7nh8ai1gugqhunnmulos5pilaviu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-q5cvjlghfbsdkic2gkl58568npvv2pdr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-654cmb21plmmoqccpagkiljlt8p4md0l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-1u11p3pasl640nhd43334shfvh41a8mc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-t3fbuhrhictl0gqc5ko4ccc5rjempnlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARDdsAlRY4HUj1wJUsDoITKmkasFFxwTU"
+        },
+        {
+          "current_key": "AIzaSyAP9UR9tRbigoWd4wrZcL-YcNx204-fr2M"
+        },
+        {
+          "current_key": "AIzaSyBG_Lan6Bd7NteBDt0kMO8BijslH7Dr-rQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:117fffab6a9f7590",
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-8kgf7nh8ai1gugqhunnmulos5pilaviu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-q5cvjlghfbsdkic2gkl58568npvv2pdr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-654cmb21plmmoqccpagkiljlt8p4md0l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-1u11p3pasl640nhd43334shfvh41a8mc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-t3fbuhrhictl0gqc5ko4ccc5rjempnlf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-il6hcfd26kkvtvgs2lma7j0p5tju5dma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jumpinjumpout.apk.alpha",
+            "certificate_hash": "d842c0132c0ec520197d6824221b9c3d3edbc69c"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARDdsAlRY4HUj1wJUsDoITKmkasFFxwTU"
+        },
+        {
+          "current_key": "AIzaSyAP9UR9tRbigoWd4wrZcL-YcNx204-fr2M"
+        },
+        {
+          "current_key": "AIzaSyBG_Lan6Bd7NteBDt0kMO8BijslH7Dr-rQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:e76b0a39618d0e6b",
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-8kgf7nh8ai1gugqhunnmulos5pilaviu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-q5cvjlghfbsdkic2gkl58568npvv2pdr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-654cmb21plmmoqccpagkiljlt8p4md0l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-1u11p3pasl640nhd43334shfvh41a8mc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-t3fbuhrhictl0gqc5ko4ccc5rjempnlf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-hcvmjg8ccr2e0jegbqe8fcrvlnu28p5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jumpinjumpout.apk.driver",
+            "certificate_hash": "3e5efa0ecab28e740dc1172ebdd6e035560e7b03"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARDdsAlRY4HUj1wJUsDoITKmkasFFxwTU"
+        },
+        {
+          "current_key": "AIzaSyAP9UR9tRbigoWd4wrZcL-YcNx204-fr2M"
+        },
+        {
+          "current_key": "AIzaSyBG_Lan6Bd7NteBDt0kMO8BijslH7Dr-rQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:24ed77aa6985e832",
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk.driver.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-8kgf7nh8ai1gugqhunnmulos5pilaviu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-q5cvjlghfbsdkic2gkl58568npvv2pdr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-654cmb21plmmoqccpagkiljlt8p4md0l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-1u11p3pasl640nhd43334shfvh41a8mc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-t3fbuhrhictl0gqc5ko4ccc5rjempnlf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-jb9pemv51nhq19vtiec6k8pd9s31qi9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jumpinjumpout.apk.driver.alpha",
+            "certificate_hash": "d842c0132c0ec520197d6824221b9c3d3edbc69c"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARDdsAlRY4HUj1wJUsDoITKmkasFFxwTU"
+        },
+        {
+          "current_key": "AIzaSyAP9UR9tRbigoWd4wrZcL-YcNx204-fr2M"
+        },
+        {
+          "current_key": "AIzaSyBG_Lan6Bd7NteBDt0kMO8BijslH7Dr-rQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:ced70a4a43193f6b",
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk.user.ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784677467274-sgmac1g0lganfuf24e3a9s2n9cetnbq7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-8kgf7nh8ai1gugqhunnmulos5pilaviu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-q5cvjlghfbsdkic2gkl58568npvv2pdr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-654cmb21plmmoqccpagkiljlt8p4md0l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-1u11p3pasl640nhd43334shfvh41a8mc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "784677467274-t3fbuhrhictl0gqc5ko4ccc5rjempnlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARDdsAlRY4HUj1wJUsDoITKmkasFFxwTU"
+        },
+        {
+          "current_key": "AIzaSyAP9UR9tRbigoWd4wrZcL-YcNx204-fr2M"
+        },
+        {
+          "current_key": "AIzaSyBG_Lan6Bd7NteBDt0kMO8BijslH7Dr-rQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

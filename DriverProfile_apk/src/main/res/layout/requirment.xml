@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llRequirement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableLeft="@mipmap/ic_star"
+            android:text="@string/how_driver_come"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/rgHowDriverCome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/rbWalkin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/walkin"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbReferral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/referral"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtByWhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/by_whome"
+            android:drawableLeft="@mipmap/ic_star"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/rgReferByWhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rbSupervisor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supervisor"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbDriver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driver"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etNameOfPerson"
+                style="@style/driverProfile"
+                android:drawableLeft="@mipmap/ic_star"
+                android:hint="@string/name_of_person"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/cab_needed"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/rgCab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/rgCabYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rgCabNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <!-- <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <EditText
+                 android:id="@+id/etPaymentAmount"
+                 style="@style/driverProfile"
+                 android:inputType="number"
+                 android:hint="@string/payment_amount" />
+         </android.support.design.widget.TextInputLayout>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableLeft="@mipmap/ic_star"
+            android:text="@string/payment_amount"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/rgPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/rb500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five_hundred"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb3000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_thousand"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb3500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_thousand_five_hundred"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:text="@string/paymentstatus"
+             android:textColor="@color/black" />
+
+         <RadioGroup
+             android:id="@+id/rgPaymentSatus"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:padding="5dp">
+
+             <RadioButton
+                 android:id="@+id/rbPayYes"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/paid"
+                 android:textSize="20sp" />
+
+             <RadioButton
+                 android:id="@+id/rbPayNo"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/notpaid"
+                 android:textSize="20sp" />
+
+         </RadioGroup>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etReceiptNo"
+                style="@style/driverProfile"
+                android:drawableLeft="@mipmap/ic_star"
+                android:hint="@string/receiptnoone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etReceiptDae"
+                style="@style/driverProfile"
+                android:drawableLeft="@mipmap/ic_star"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:hint="@string/receiptdate" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etReceiptNoTwo"
+                style="@style/driverProfile"
+                android:hint="@string/receiptnotwo"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etReceiptDateTwo"
+                style="@style/driverProfile"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:hint="@string/receiptdateTwo"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etReceiptNoThree"
+                style="@style/driverProfile"
+                android:hint="@string/receiptnothree"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etReceiptDateThree"
+                style="@style/driverProfile"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:hint="@string/receiptdateThree"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Add New Receipt"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:src="@mipmap/ic_add" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etRemark"
+                style="@style/driverProfile"
+                android:hint="@string/remark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etInternalComment"
+                style="@style/driverProfile"
+                android:hint="@string/internal_comment" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--   <CheckBox
+               android:id="@+id/chkBackOut"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/backout"
+               android:textSize="16sp"
+               android:visibility="gone" />
+
+           <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+               android:id="@+id/spnBackoutReason"
+               app:met_floatingLabel="normal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/backout_reason"
+               android:visibility="gone">
+
+           </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/etBackoutReason"
+                   style="@style/driverProfile"
+                   android:hint="@string/backout_reason"
+                   android:inputType="text"
+                   android:textSize="20sp"
+                   android:visibility="gone" />
+           </android.support.design.widget.TextInputLayout>-->
+
+    </LinearLayout>
+</LinearLayout>

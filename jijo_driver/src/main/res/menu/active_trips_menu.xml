@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:jijoapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@mipmap/ic_menu_refresh"
+        android:title="@string/menu_refresh"
+        jijoapp:showAsAction="always" />
+</menu>
+
+    <!--
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/menu_directions"
+            android:title="@string/menu_directions"
+            android:icon="@drawable/ic_action_directions"
+            android:showAsAction="always"/>
+         <item
+            android:id="@+id/menu_refresh"
+            android:title="@string/menu_refresh"
+            android:icon="@drawable/ic_menu_refresh"
+            android:showAsAction="always"/>
+
+    </menu>
+     -->
+

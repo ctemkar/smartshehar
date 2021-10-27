@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_map"
+        android:icon="@drawable/ic_action_location"
+        android:showAsAction="always"
+        android:title="@string/ac"></item>
+    <item
+        android:id="@+id/menu_list"
+        android:icon="@mipmap/ic_newaction_refresh_black"
+        android:showAsAction="always"
+        android:title="@string/menu_refresh"></item>
+</menu>

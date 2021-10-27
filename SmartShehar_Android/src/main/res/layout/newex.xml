@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_border_photo"
+            android:gravity="center" android:layout_margin="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_municipal_issue" />
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_camera" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etProgressComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llImage"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnProgressDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/etProgressComment"
+            android:background="@color/issue_ffd54f"
+            android:text="@string/submit"
+            android:textColor="@color/DarkGrey" />
+    </RelativeLayout>
+
+
+</LinearLayout>

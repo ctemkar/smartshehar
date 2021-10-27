@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="GotItDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent_white</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyTheme" parent="MyTheme.Base"></style>
+    <!-- Base theme applied no matter what API -->
+    <style name="MyTheme.Base" parent="@android:style/Theme.Holo.Light">
+        <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+        <item name="android:windowNoTitle">true</item>
+        <!--We will be using the toolbar so no need to show ActionBar-->
+        <item name="windowActionBar">true</item>
+        <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">#2196F3</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">#1976D2</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">#FF4081</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+            colorControlHighlight and colorSwitchThumbNormal. -->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"></style>
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#512DA8</item>
+        <item name="colorAccent">#2962ff</item>
+        <item name="colorControlHighlight">#2962ff</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

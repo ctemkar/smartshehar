@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/fragNextBusScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dip">
+
+            <LinearLayout
+                android:id="@+id/llStartStop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="5dip"
+                android:background="#fff8dc"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete_startstop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/BackgroundLight"
+                        android:dropDownWidth="220dp"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/startStopHint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:maxWidth="230dip"
+                        android:minWidth="230dip"
+                        android:padding="2dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="@string/x"
+                    android:textColor="#FF4900"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/locStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_rounded"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvNoArrivingBuses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_rounded"
+                android:text="@string/noArrivingBuses"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TableLayout
+                android:id="@+id/tblArrivingBuses"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#000000"></TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

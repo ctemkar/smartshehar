@@ -1,0 +1,78 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/llDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNotificationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOffenceType"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/hello_world"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtIssueType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/hello_world"
+            android:textColor="#000000"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtIssueSubType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="hello"
+            android:textColor="#000000"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/txtIssueAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOffenceTime"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="hello"
+            android:textColor="#000000"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/txtIssueTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOffenceType"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="hello"
+            android:textColor="#000000"
+            android:visibility="gone"
+            />
+        <!--android:text="Email sent to authority"-->
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

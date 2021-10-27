@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jumpinjumpout.ui.ActFollowUp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/txtDriverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="hello"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="hello"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/llFollowup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/chkInitialPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/initialpayment"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chkFullPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fullpayment"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chkPrivateVerification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privteverification"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chkPoliceVerification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/policeverification"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chkBackOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backout"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlBackoutReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/frame"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtBackoutReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/backout_reason"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imgMore"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/txtBackoutReason"
+                    android:contentDescription="@string/backout_reason"
+                    android:src="@mipmap/ic_open" />
+
+                <LinearLayout
+                    android:id="@+id/llBackout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtBackoutReason"
+                    android:background="@drawable/frame"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/rgBackout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <RadioButton
+                            android:id="@+id/rbChangeMind"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mind_changed"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/frame"
+                             />
+
+                        <RadioButton
+                            android:id="@+id/rbNoDocs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no_document"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/frame"
+                          />
+
+                        <RadioButton
+                            android:id="@+id/rbOther"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textSize="20sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etBackoutReason"
+                    style="@style/driverProfile"
+                    android:hint="@string/backout_reason"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/done" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

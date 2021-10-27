@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp">
+
+        <RelativeLayout
+            android:id="@+id/rlFromTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/ac_from"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BackgroundLight"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/jumpinpoint"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ac_to"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_from"
+                android:layout_marginTop="10dp"
+                android:background="@color/BackgroundLight"
+                android:gravity="center_vertical"
+                android:hint="@string/jumpOutPoint"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlActionButons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_to"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/btnGoNow"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_green"
+                    android:text="@string/go_now"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnChangeTime"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/btnGoNow"
+                    android:layout_toRightOf="@+id/btnGoNow"
+                    android:background="@drawable/btn_green"
+                    android:onClick="showTimePickerDialog"
+                    android:text="@string/change_time"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/btnChangeTime"
+                    android:layout_toRightOf="@+id/btnChangeTime"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rlActionButons"
+                android:layout_marginTop="5dp"
+                android:background="@color/BackgroundDark" />
+
+
+            <FrameLayout
+                android:id="@+id/active_trips_list_fragment_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/BackgroundDark"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llfriendcabButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/btnfriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/frame_selected"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/friends" />
+
+            <TextView
+                android:id="@+id/btndriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/thin_frame"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/cabs" />
+
+            <TextView
+                android:id="@+id/btnLongDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_yellow"
+                android:gravity="center"
+                android:onClick="onClickLongDistance"
+                android:padding="10dp"
+                android:text="@string/longdistance"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flNotiDes"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom"></FrameLayout>
+</FrameLayout>

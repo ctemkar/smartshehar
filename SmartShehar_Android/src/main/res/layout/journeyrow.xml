@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llStopRow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="4dp">
+
+    <LinearLayout
+        android:id="@+id/llStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvStopSerial"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:text="13"
+            android:textAppearance="@style/colorRowBold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvStopnameDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="Colaba Bus stn."
+            android:textAppearance="@style/colorRowBold"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/sendlocation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5sp"
+            android:layout_weight=".1"
+            android:src="@drawable/ic_location"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLandmarkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Colabe Bus Stn (1.5), Musuem (2)"
+        android:textSize="16sp" />
+</LinearLayout>

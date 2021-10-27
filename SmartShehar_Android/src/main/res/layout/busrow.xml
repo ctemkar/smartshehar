@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:ignore="SelectableText">
+
+    <LinearLayout
+        android:id="@+id/llBusNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tvBusNo"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="busno"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvFreqUp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="2dp"
+            android:singleLine="false"
+            android:text="every 25 min."
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/llBusNo"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/tvRouteUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="2dp"
+            android:singleLine="false"
+            android:text="@string/to_electric_house" />
+
+        <TextView
+            android:id="@+id/tvEtaUp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRouteUp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="2dp"
+            android:singleLine="false"
+            android:textColor="@color/blue"
+            android:text="ETA 10.30"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
+

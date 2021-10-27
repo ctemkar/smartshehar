@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:defaultValue=""
+        android:key="homeAddress"
+        android:summary="Select Home address"
+        android:title="Home Address" />
+    <Preference
+        android:defaultValue=""
+        android:key="workAddress"
+        android:summary="Select Work address"
+        android:title="Work Address" />
+    <Preference
+        android:button="@drawable/green_drawable"
+        android:defaultValue=""
+        android:key="userprofile"
+        android:title="User Profile" />
+</PreferenceScreen>

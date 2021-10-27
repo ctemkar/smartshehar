@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/ttl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2sp"
+            android:layout_marginTop="2sp"
+            android:background="@color/white"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblDirect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/royal_blue"
+            android:padding="3dp"
+            android:singleLine="false"
+            android:text="@string/directBuses"
+            android:textAppearance="@style/colorRowBold"
+            android:textColor="#ffffff00"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:id="@+id/tblDirectBuses"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/lblConnecting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/royal_blue"
+            android:padding="3dp"
+            android:singleLine="false"
+            android:text="@string/connecting"
+            android:textAppearance="@style/colorRowBold"
+            android:textColor="#ffffff00"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TableLayout
+            android:id="@+id/tblConnection"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+    

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/faredistance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/distance"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/fare"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/faredistance"
+        android:padding="5dp"
+        android:text="@string/Fare"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/nightfare"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fare"
+        android:padding="5dp"
+        android:text="@string/night"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+</RelativeLayout>

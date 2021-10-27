@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/abstract_map_act" />
+
+    <RelativeLayout
+        android:id="@+id/fab_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ivwalkwithme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/famZoom"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickWalkWithMe"
+            android:src="@drawable/ic_walkwithme"
+            android:visibility="visible"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ivTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/famZoom"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickTwitter"
+            android:scaleType="center"
+            android:src="@drawable/twitter"
+            android:visibility="visible"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ivFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/famZoom"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickFacebook"
+            android:scaleType="center"
+            android:src="@drawable/facebook"
+            android:visibility="visible"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ivZoomVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/famZoom"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="160dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/passenger"
+            android:onClick="onClickZoomVehicle"
+            android:scaleType="center"
+            android:src="@mipmap/ic_car"
+            android:visibility="visible"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ivZoomActiveUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/famZoom"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="110dp"
+            android:layout_marginRight="5dp"
+            android:onClick="onClickZoomActiveUsers"
+            android:scaleType="center"
+            android:src="@mipmap/ic_zoom_active_users"
+            android:visibility="visible"
+            app:fabSize="mini" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ivZoomFit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/famZoom"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="5dp"
+            android:onClick="onClickZoomTrip"
+            android:scaleType="center"
+            android:src="@mipmap/ic_zoom_fit"
+            android:visibility="visible"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ivInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/famZoom"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/passenger"
+            android:onClick="onClickInformation"
+            android:scaleType="center"
+            android:src="@mipmap/ic_info"
+            android:visibility="visible"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/famZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="120dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/ic_openfloat"
+            app:fabSize="mini" />
+    </RelativeLayout>
+
+</merge>

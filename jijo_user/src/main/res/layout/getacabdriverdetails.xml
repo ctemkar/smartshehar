@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvNoPassengerGetacab"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/BackgroundLight"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="No waiting passengers."
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llPassengerInfoGetacab"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/BackgroundLight"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llWaitingPassengerGetacab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llPassengerGetacab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivPhotoGetacab"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_person"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tvDriverNameGetacab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTripStatusGetacab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Enjoy your ride"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTripAction"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/gray_background"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tvdistanceGetacab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvkmGetacab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="km"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvTimeGetacab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvMinsGetacab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="mins"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

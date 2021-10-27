@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="@color/Gainsboro"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:id="@+id/btnbookcab"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/thin_frame"
+        android:gravity="center"
+        android:onClick="onClickBookCab"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/bookcab"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvShowMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/btnDriverInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:onClick="onClickDriverInfo"
+            android:text="Driver Information"/>
+    </LinearLayout>
+
+</LinearLayout>

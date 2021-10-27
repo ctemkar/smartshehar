@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"   xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jumpinjumpout.www.driverprofile.com.jumpinjumpout.www.driverprofile.ui.ListCleared_act">
+    <item android:id="@+id/item_deactivate" android:title="Exit"
+        android:orderInCategory="100" yourapp:showAsAction="never" />
+</menu>

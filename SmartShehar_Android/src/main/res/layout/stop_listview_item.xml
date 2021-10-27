@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llStop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="2dp"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/tvStopNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Stop Name Detail"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLandmarkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Landmark 1(1.5), Landmark 2 (2))"
+        android:textSize="16sp" />
+
+</LinearLayout>

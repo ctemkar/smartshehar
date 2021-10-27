@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartshehar.cabe">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="${packageName}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${packageName}.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <application
+        android:name="com.smartshehar.cabe.MyApplication_CabE"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".ui.SplashScreen_act"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DesignDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <activity
+            android:name=".ui.CabEMain_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Cab-e"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.DesignDemo" />
+
+
+        <activity
+            android:name=".ui.CabERegistration_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Cab-e"
+            android:launchMode="singleTop"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <activity
+            android:name=".ui.CabENumberVerify_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Cab-e"
+            android:launchMode="singleTop"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <activity
+            android:name=".ui.CabENumberVerifyCode_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Cab-e"
+            android:launchMode="singleTop"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <activity
+            android:name=".ui.NotificationView"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Cab-e"
+            android:launchMode="singleTop"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="lib.app.util.SearchAddress_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <activity
+            android:name="lib.app.util.ui.ActFeedback"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <activity
+            android:name=".ui.TripHistoryList_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.TripHistoryMap_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.Emergency_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.WalkWithMe_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.CabEUserProfile_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- Paytm Activity -->
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <!--Share Trip Activity-->
+        <activity
+            android:name=".ui.CreateShareTrip_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <activity
+            android:name=".ui.ListOfPointAddress_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <service
+            android:name=".RegistrationIntentService_CabE"
+            android:exported="false" />
+
+        <service android:name=".LocationService"/>
+
+        <receiver android:name="lib.app.util.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!--<service android:name=".GcmIntentService" />
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="${packageName}" />
+            </intent-filter>
+        </receiver>-->
+        <service
+            android:name="lib.app.util.FetchAddressIntentService"
+            android:exported="false" />
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

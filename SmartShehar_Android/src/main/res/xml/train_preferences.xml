@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceCategory android:title="Home/Work stations">
+        <ListPreference
+            android:defaultValue="0"
+            android:key="home_station"
+            android:summary="Select home station"
+            android:title="Home station" />
+        <ListPreference
+            android:defaultValue="0"
+            android:key="work_station"
+            android:summary="Select work station"
+            android:title="Work station" />
+    </PreferenceCategory>
+    <!--<CheckBoxPreference
+        android:defaultValue="true"
+        android:key="checkBoxAutoLocation"
+        android:summary="Automatically get location and display contextual information"
+        android:title="Auto Location" />-->
+</PreferenceScreen>

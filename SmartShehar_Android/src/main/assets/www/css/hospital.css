@@ -1,0 +1,37 @@
+* {margin:0; padding:0}
+nav ul#nlists li { 
+	border-bottom: 1px solid #d9e2eb; 
+	background: #fff; 
+	display: block;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff) to(#ecf1f5));
+	background-image: -webkit-linear-gradient(top, #ffffff, #ecf1f5);
+	background-image:    -moz-linear-gradient(top, #ffffff, #ecf1f5);
+	background-image:      -o-linear-gradient(top, #ffffff, #ecf1f5);
+	background-image:         linear-gradient(top, #ffffff, #ecf1f5); 	position: relative; 
+	display: block;
+	box-sizing: border-box;
+	width: 98%;
+	text-decoration: none; 
+	font-size: 1.4em; 
+	color: #787878;
+	font-weight: bold;
+	overflow: hidden;
+	-webkit-padding-start: 10px;
+}
+#place {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+#address {
+  font: 14px/1.5 Helvetica, Verdana, sans-serif;
+}
+#phone {
+  font: bold 16px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+ #map {
+        height: 400px;
+        width: 98%;
+        border: 1px solid #333;
+        margin-top: 0.6em;
+}
+ 

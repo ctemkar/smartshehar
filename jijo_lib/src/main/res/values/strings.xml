@@ -1,0 +1,299 @@
+<resources>
+
+
+    <string name="contentSplash">Splash Screen</string>
+    <string name="appNameShort">JiJoD</string>
+    <string name="appCode">"JiJoD"</string>
+    <string name="androidAppLink">https://play.google.com/store/apps/details?id=com.jumpinjumpout.apk\nCheck out this great app.\n Look for Share any ride on Google Play\n"</string>
+
+    <!-- Contact Us -->
+    <string name="contactUs">"Contact Us"</string>
+    <string name="feedback">"FeedBack/Questions"</string>
+    <string name="advertise">"Advertise with Us"</string>
+    <string name="advertise_interest">"Interested in advertising in "</string>
+    <string name="feedback_for">"Feeback for "</string>
+    <string name="rateus">"Rate Us"</string>
+    <string name="rateAndroid">"Rate on Google Play"</string>
+    <string name="social">"Social"</string>
+    <string name="shareFacebook">"Like using Facebook"</string>
+    <string name="shareTwitter">"Follow on Twitter"</string>
+    <string name="website">"<u>www.jumpinjumpout.com</u>"</string>
+    <string name="home_joinride">"Find ride"</string>
+
+    <!-- GPS stuff -->
+    <string name="gps_enable">"GPS is disabled. This module requires the GPS to be on"</string>
+    <string name="no_gps_message">"Enable GPS?"</string>
+
+    <!-- Ads, analytics, etc. -->
+    <string name="gaid">"UA-32381506-6"</string>
+    <string name="adunitid">"a15261094738817"</string>
+    <string name="home_shareMyVehicle">Share ride</string>
+    <string name="home_getCab">Get a Cab</string>
+    <string name="home_estimatedFare">Estimated Fare</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_feedback">Feedback</string>
+    <string name="home_SmartShehar">JumpinJumpout</string>
+    <string name="atFirstUse">"RS_F"</string>
+    <string name="atShare">"RS_S"</string>
+    <string name="atShareLong">"RideShare Share"</string>
+    <string name="atRunSmartShehar">"RS_RS"</string>
+    <string name="atRunSmartSheharLong">"Run JumpinJumpout"</string>
+    <string name="atDownloadSmartShehar">"RS_LS"</string>
+    <string name="atDownloadSmartSheharLong">"Download JumpinJumpout"</string>
+    <string name="pageDashboard">"/RSD</string>
+    <string name="pageDashboardLong">"/RideShare_Dashboard"</string>
+    <string name="pageMeter">"/RSJ</string>
+    <string name="pageMeterLong">"/RideShare_JoinRide</string>
+    <string name="pageCard">"/RSMV</string>
+    <string name="pageCardLong">"/RideShare_ShareMyVehicle</string>
+    <string name="eula_title">Share any ride Terms of Use</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="unknown">"\?"</string>
+
+    <!-- Location -->
+    <string name="myLocation">Your Location</string>
+
+    <!-- Menu -->
+    <string name="menu_share">Share</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_notification_clear">Clear</string>
+    <!-- Search -->
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="address_search_hint">Search Address</string>
+    <string name="search_settings">Search Places</string>
+    <string name="hintStartAddress">Start address</string>
+    <string name="hintDestinationAddress">Destination address</string>
+    <string name="ride_distance_text">This trip is about</string>
+    <string name="ride_duration_text">taking approximately</string>
+    <string name="traffic">(depending on traffic)</string>
+    <string name="rideStartOKHint">When you Create Trip, passengers on your route will be able to find you and you will see them on the map.\nWhen you start moving, the system will automatically notify passenger who have joined your trip</string>
+    <string name="tripActive">Trip active. \nPassengers will see you</string>
+    <string name="serverConnectFailed">Failed to communicate with server. \nCheck your internet connection and refresh</string>
+    <string name="pause">Pause Sharing</string>
+    <string name="resume">Resume</string>
+    <string name="endTrip">End Trip</string>
+    <string name="create_trip">Go</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="crash_toast_text">App Crashed</string>
+
+    <!-- Track trip -->
+    <string name="call">Call</string>
+    <string name="chat">Chat</string>
+    <string name="track">Track</string>
+    <string name="trackNotify">Sharer and you will get notifications about each other</string>
+
+    <!-- Improve location -->
+    <string name="location_settings_title">Improve location accuracy</string>
+    <string name="location_settings">Settings</string>
+    <string name="location_skip">Skip</string>
+    <string name="location_instructions">To use this system effectively\n\n• Turn on GPS and mobile network location\n</string>
+    <string name="location_instructions_gps">You have network location on, but GPS is deactivated.\nYour location accurcay will be low causing problems in using the system.\nTurn on GPS\n</string>
+    <string name="never_show_again">Never show this again</string>
+    <string name="no_location">No location. Please turn on GPS</string>
+
+    <!-- Phone confirmation -->
+    <string name="phoneConfirmExplanation">You need to confirm your phone number. App will send you single SMS (local SMS charges)\n</string>
+    <string name="codeHint">"JumpInJumpOut app verifcation code (use only if app did not activate automatically): "</string>
+
+    <!-- Miscellaneous -->
+    <string name="nocallinfo">Call information not available</string>
+    <string name="nochatinfo">Chat information not available</string>
+    <string name="verify">Verify</string>
+    <string name="myPhoneNo">Enter your phone number</string>
+    <string name="next">Next</string>
+    <!-- user type -->
+    <string name="usetype">I will</string>
+    <string name="passengerFriends">Hitch rides with friends</string>
+    <string name="poolFriends">Pool rides with friends Only</string>
+    <string name="passengerAll">Hitch rides with friends and others</string>
+    <string name="poolAll">Pool rides with friends and others</string>
+    <string name="commercial">Offer rides as a paid licensed driver</string>
+    <!-- Driver info -->
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of Birth</string>
+    <string name="vehicleNo">Vehicle number</string>
+    <string name="licenseNo">License number</string>
+    <string name="vehicleMaker">Vehicle maker (eg. Ford)</string>
+    <string name="vehicleModel">Vehicle model (eg. Taurus)</string>
+    <string name="vehicleColor">Vehicle color (use simple names like Green)</string>
+    <string name="passengerCapacity">Passenger capacity (seats)</string>
+    <!-- Friend on path -->
+    <string name="isfriend">Is it a friend?</string>
+    <string name="inpath">Passing near your location</string>
+    <!-- Journey -->
+    <string-array name="journeyStarts">
+        <item>Right away</item>
+        <item>in 5 min.</item>
+        <item>in 10 min.</item>
+        <item>in 15 min.</item>
+        <item>in 20 min.</item>
+        <item>in 30 min.</item>
+    </string-array>
+
+    <string name="noPassengersOnRoad">"Its lonely out there!"</string>
+    <string name="eula">By downloading any application from jumpinjumpout.com (here after referred to as "The Company") installing or using this application or any portion thereof ("Application"), you agree to the following terms and conditions (the "Terms and Conditions").\n
+
+1. USE OF APPLICATION\n
+a. The Company grants you the non-exclusive, non-transferable, limited right and license to install and use this Application solely and exclusively for your personal use.\n
+b. You may not use the Application in any manner that could damage, disable, over-burden, or impair the Application (or servers or networks connected to the Application), nor may you use the Application in any manner that could interfere with any other party\'s use and enjoyment of the Application (or servers or networks connected to the Application).
+c. You agree that you are solely responsible for (and that The Company has no responsibility to you or to any third party for) your use of the Application, any breach of your obligations under the Terms and Conditions, and for the consequences (including any loss or damage which The Company may suffer) of any such breach.\n
+
+2. PROPRIETARY RIGHTS\n
+You acknowledge that (a) the Application contains proprietary and confidential information that is protected by applicable intellectual property and other laws, and (b) The Company and/or third parties own all right, title and interest in and to the Application and content, excluding content provided by you, that may be presented or accessed through the Application, including without limitation all Intellectual Property Rights therein and thereto. "Intellectual Property Rights" means any and all rights existing from time to time under patent law, copyright law, trade secret law, trademark law, unfair competition law, and any and all other proprietary rights, and any and all applications, renewals, extensions and restorations thereof, now or hereafter in force and effect worldwide. You agree that you will not, and will not allow any third party to, (i) copy, sell, license, distribute, transfer, modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from the Application or content that may be presented or accessed through the Application for any purpose, unless otherwise permitted, (ii) take any action to circumvent or defeat the security or content usage rules provided, deployed or enforced by any functionality (including without limitation digital rights management functionality) contained in the Application, (iii) use the Application to access, copy, transfer, transcode or retransmit content in violation of any law or third party rights, or (iv) remove, obscure, or alter The Company\'s or any third partyâ€™s copyright notices, trademarks, or other proprietary rights notices affixed to or contained within or accessed in conjunction with or through the Application.\n
+
+3. THE COMPANY TERMS OF SERVICE AND PRIVACY POLICY\n
+a. The Company\'s Privacy Policy (located at http://mesn.org/bestbus/privacypolicy.html) explains how The Company treats your information and protects your privacy when you use the Application. You agree to the use of your data in accordance with The Company\'s privacy policies.\n
+b. The Application may contain features that are used in conjunction with The Company\'s search and other services. Accordingly, your use of such features of the Application is also governed by The Company\'s Terms of Service located at http://mesn.org/bestbus/terms_of_service.html, The Company\'s Privacy Policy located at http://www.jumpinjumpout.com/privacypolicy.html, as well as any applicable The Company Service-specific Terms of Service and Privacy Policy, which may be updated from time to time and without notice.\n
+
+4. TERMINATION\n
+These Terms and Conditions will continue to apply until terminated by either you or The Company as set forth below. You may terminate these Terms and Conditions at any time by permanently deleting the Application from your mobile device in its entirety. Your rights automatically and immediately terminate without notice from The Company or any Third Party if you fail to comply with any provision of these Terms and Conditions. In such event, you must immediately delete the Application.\n
+
+5. INDEMNITY\n
+To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless The Company, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys fees) arising out of or accruing from your use of the Application, including your downloading, installation, or use of the Application, or your violation of these Terms and Conditions.\n
+
+6. DISCLAIMER OF WARRANTIES\n
+a. YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE APPLICATION IS AT YOUR SOLE DISCRETION AND RISK AND THAT THE APPLICATION IS PROVIDED AS IS AND AS AVAILABLE WITHOUT WARRANTY OF ANY KIND.\n
+b. YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR MOBILE DEVICE, OR OTHER DEVICE, OR LOSS OF DATA THAT RESULTS FROM SUCH USE.\n
+c. THE COMPANY FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, WITH RESPECT TO THE APPLICATION.\n
+d. THE APPLICATION IS NOT INTENDED FOR USE IN THE OPERATION OF NUCLEAR FACILITIES, LIFE SUPPORT SYSTEMS, EMERGENCY COMMUNICATIONS, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL SYSTEMS, OR ANY OTHER ACTIVITIES IN WHICH THE FAILURE OF THE APPLICATION COULD LEAD TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE.\n
+
+7. LIMITATION OF LIABILITY\n
+YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE COMPANY, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS ARE NOT LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU THROUGH YOUR USE OF THE APPLICATION, INCLUDING ANY LOSS OF DATA OR DAMAGE TO YOUR MOBILE DEVICE, WHETHER OR NOT THE COMPANY OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.\n
+
+8. MISCELLANEOUS\n
+a. These Terms and Conditions constitute the entire Agreement between you and The Company relating to the Application and govern your use of the Application, and completely replace any prior or contemporaneous agreements between you and The Company regarding the Application.\n
+b. The failure of The Company to exercise or enforce any right or provision of these Terms and Conditions does not constitute a waiver of such right or provision, which will still be available to The Company.\n
+c. If any court of law, having the jurisdiction to decide on this matter, rules that any provision of these Terms and Conditions is invalid, then that provision will be removed from the Terms and Conditions without affecting the rest of the Terms and Conditions. The remaining provisions of these Terms and Conditions will continue to be valid and enforceable.\n
+d. The rights granted in these Terms and Conditions may not be assigned or transferred by either you or The Company without the prior written approval of the other party. Neither you nor The Company are permitted to delegate their responsibilities or obligations under these Terms and Conditions without the prior written approval of the other party.\n
+e. These Terms and Conditions and your relationship with The Company under these Terms and Conditions will be governed by the laws of the State of California without regard to its conflict of laws provisions. You and The Company agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from these Terms and Conditions. Notwithstanding this, you agree that The Company will still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.\n
+</string>
+    <string name="updates">First version of Share any ride\n
+http://www.jumpinjumpout.com\n
+http://www.facebook.com/jumpinjumpout\n
+email: jumpinjumpout@gmail.com
+</string>
+    <string name="driver_friends_active">Friends on road</string>
+    <string name="home_for_hire">For Hire</string>
+    <string name="dummytext">This is to test layout</string>
+    <string name="start">Start</string>
+    <string name="no_net_image">No connection to the internet</string>
+    <string name="no_location_image">Loccation not available</string>
+    <string name="startNow">Start Now</string>
+    <string name="cancelTrip">Cancel Trip</string>
+    <string name="notifySharer">Notify Sharer</string>
+    <string name="notifyMe">Notify Me</string>
+    <string name="notify">Notify</string>
+    <string name="passengerTrudge">"You need to trudge along on your own :(\nMay be you can plan a trip and others will join"</string>
+    <string name="home_activeUsers">Active users</string>
+    <string name="change">Change</string>
+    <string name="defaultNotificationSetting">You are seeing all notifications</string>
+    <string name="snooze15">Snooze 15 min.</string>
+    <string name="snooze30">Snooze for half hour</string>
+    <string name="snooze1hr">Snooze for an hour</string>
+    <string name="snoozeDay">Snooze till tomorrow</string>
+    <string name="snooze1day">Snooze till tomorrow</string>
+    <string name="setupNotifyFrequency">My Notifications</string>
+    <string name="setupMyUsageStyle">My Usage style</string>
+    <string name="snoozeFoever">Snooze forever (till I change the setting back here)</string>
+    <string name="join">Join</string>
+    <string name="cancelSnooze">Cancel Snooze</string>
+    <string name="snooze">Snooze</string>
+    <string name="nowhatsapp">Please install Whatsapp to use this feature</string>
+    <string name="noactivity">Its quiet out there. No active users found.</string>
+    <string name="changeNotificationSettings">Touch here to change when you get notifications</string>
+
+    <!-- Trip status -->
+    <string name="tripInProgress">Trip in progress</string>
+    <string name="tripNotStarted">Trip not started</string>
+
+    <!-- Trip action -->
+    <string name="showStrangerNotification">Show notifications from strangers</string>
+    <string name="planForLater">Not sure when I am leaving</string>
+    <string name="notifyFriends">Notify friends</string>
+    <string name="estimatedcost">Estimated Cost is</string>
+    <string name="menu_directions">Directions</string>
+
+    <!-- Map -->
+    <string name="dropped_pin">Dropped Pin</string>
+    <string name="go_now">Create Trip</string>
+    <string name="selectfriends">Type names of friends to send notifications</string>
+    <string name="friends">Friends</string>
+    <string name="trip_type_commercial">Commercial</string>
+    <string name="notifyAllFriends">Notify all friends (or select below)</string>
+    <string name="flag">Flag</string>
+    <string name="carMakeModelNo">Car desc. eg. Red Indica 9999</string>
+    <string name="startLandmark">Start e.g. Pyramid building main gate</string>
+    <string name="notesDiscount">Trip notes e.g Rs. 99 flat fare</string>
+    <string name="away">away</string>
+    <string name="activeUsers">Active user/s</string>
+    <string name="noActiveUsers">No active users</string>
+    <string name="availableCabs">Available cab/s</string>
+    <string name="noAvailableJumpIns">No available Jump.ins</string>
+    <string name="smsCode">If you have an SMS code, enter it here</string>
+    <string name="change_time">Filter Trip</string>
+    <string name="jumpinpoint">Enter Jump.in point e.g. Main St.</string>
+    <string name="jumpOutPoint">Jump.out point</string>
+    <string name="sharedCab">Shared Cab</string>
+    <string name="startTime">Start Time</string>
+    <string name="shareVehicle">Shared Trip</string>
+    <string name="home_share_cab">Share cab</string>
+    <string name="jumpIn">Jump In!</string>
+    <string name="jumpOut">Jump Out!</string>
+
+    <!-- Signals content desc -->
+    <string name="redSignal">Red Signal - Ready</string>
+    <string name="yellowSignal">Yellow Signal 2+</string>
+    <string name="greenSignal">Green Signal 5+</string>
+    <string name="zzz">Zzz 10+</string>
+    <string name="passenger">Passsenger</string>
+
+    <!-- Switch vars -->
+    <drawable name="red_drawable">#CCAA1883</drawable>
+    <drawable name="green_drawable">#CC123Bff</drawable>
+
+    <string name="showMe">Show me</string>
+    <string name="tripAlerts">Trip alerts</string>
+    <string name="cabAlerts">Cab alerts</string>
+    <string name="getcab_rightaway">Get Cab (right away)</string>
+    <string name="findShaedCab"></string>
+    <string name="findSharedCab">Find shared cab</string>
+    <string name="requstCabLater">Request cab later (cheaper)</string>
+    <string name="driveShare">Drive and share</string>
+    <string name="home_PoolFriends">Friends Pool</string>
+    <string name="noEmptySeats"># of empty seats (eg. 3)</string>
+    <string name="noTripInfo">No Trip information as yet</string>
+    <string name="placeHolder">N/A</string>
+
+    <string name="address_found">Address found</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="gettingDirections">Getting directions ...</string>
+    <string name="tripSetupFailed">Trip setup failed</string>
+    <string name="pleaseTryAgain">Please try again.</string>
+    <string name="couldNotCreateTrip">Could not create trip (Connection problems?), please try again</string>
+
+    <string name="waiting">waiting</string>
+    <string name="gotIt">Got it</string>
+    <string name="vehiclelogout">Logout</string>
+    <string name="addhome">Add Home</string>
+    <string name="addwork">Add Work</string>
+
+    <string name="upgradeappTitel">Upgrade App.</string>
+    <string name="upgradeappbutton">Upgrade</string>
+    <string name="remindMeLater">Remind Me Later</string>
+    <string name="api11not">Sorry, this Android version does not support rotation\nPlease use a photo from your gallery</string>
+    <string name="failedToConnect">Failed to connect. Please try again</string>
+    <string name="submit">Submit</string>
+    <string name="go">Go</string>
+    <string name="gcm_defaultSenderId">784677467274</string>
+    <string name="no_recent_trip">No Recent Trip \nPlease click plus \"+\" button to create a new trip</string>
+
+</resources>

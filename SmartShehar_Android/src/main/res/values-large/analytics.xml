@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+tools:ignore="TypographyDashes">
+  <!--Replace placeholder ID with your tracking ID-->
+  <string name="ga_trackingId">UA-32381506-4</string>
+
+  <!--Enable automatic activity tracking-->
+  <bool name="ga_autoActivityTracking">true</bool>
+
+  <!--Enable automatic exception tracking-->
+  <bool name="ga_reportUncaughtExceptions">true</bool>
+<bool name="ga_debug">true</bool>  
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActDashboard">Dashboard</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActEstimatedCost">Estimate Cost</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActFareCalculator">Fare Calculator</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActFareType">Fare Type</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActMeter">Meter</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActMyTrips">My Trips</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActPreference">Settings</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.RTOCards">RTO Cards</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActTripSummary">Trip Summary</string>
+<string name="com.smartshehar.android.autotaximeterfare.app.ui.ActFeedback">Feedback</string>
+
+
+</resources>

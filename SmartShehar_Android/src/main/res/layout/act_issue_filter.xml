@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ScrollView
+        android:id="@+id/svFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Reset" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/bydate"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtFromDate"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/textView9"
+                    android:layout_alignStart="@+id/textView9"
+                    android:layout_below="@+id/textView9"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/thin_frame"
+                    android:gravity="center"
+                    android:hint="@string/fromDate"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/txtToDate"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/txtFromDate"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/txtFromDate"
+                    android:layout_toRightOf="@+id/txtFromDate"
+                    android:background="@drawable/thin_frame"
+                    android:gravity="center"
+                    android:hint="@string/toDate"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/frame">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/bypostalcode"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etPostalCode"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/textView11"
+                    android:layout_alignStart="@+id/textView11"
+                    android:layout_below="@+id/textView11"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/thin_frame"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="@string/postal"
+                    android:inputType="number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/frame"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtWard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/byward"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imgMoreWard"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/txtWard"
+                    android:contentDescription="@string/byward"
+                    android:src="@mipmap/ic_open" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/frame">
+
+                <TextView
+                    android:id="@+id/txtfilterby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/bycategory"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imgMore"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/txtfilterby"
+                    android:contentDescription="@string/more"
+                    android:src="@mipmap/ic_open" />
+
+                <!-- <ScrollView
+                     android:id="@+id/svCategory"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/txtfilterby"
+                     android:visibility="gone">-->
+
+                <LinearLayout
+                    android:id="@+id/svCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtfilterby"
+                    android:background="@drawable/frame"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/chkMyComplaints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:text="@string/menuMyComplaints"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/SkyBlue"
+                        android:visibility="visible" />
+
+                    <CheckBox
+                        android:id="@+id/chkPV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/ParkingViolation"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkMV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/MovingViolation"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkRT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/RegularTrafficProblem"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkAUT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/AutoRickshawTaxi"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkRD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/Roads"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/Cleanliness"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkEN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/HawkersEncroachment"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkSF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/SafetyIssues"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkWE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/WaterElectricity"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkOG"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/OpenSpacesGreenery"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkRS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/RequestaService"
+                        android:textSize="16sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/chkAll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/frame"
+                        android:checked="true"
+                        android:text="@string/showall"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+                <!--   </ScrollView>-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/frame">
+
+                <CheckBox
+                    android:id="@+id/chkClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/closedissue"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/frame">
+
+                <CheckBox
+                    android:id="@+id/chkResolved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resolvedissue"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_list"
+                    android:src="@mipmap/ic_filter"  android:text="List" />
+
+                <Button
+                    android:id="@+id/btnMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/map"
+                    android:drawableLeft="@mipmap/ic_map"
+                    android:text="Map" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/wvReport"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+</LinearLayout>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/bbCommuting"
+        android:icon="@drawable/ic_commuting"
+        android:title="@string/menucommuting" />
+    <item
+        android:id="@+id/bbGovernance"
+        android:icon="@drawable/ic_governance"
+        android:title="@string/menugovernance" />
+    <item
+        android:id="@+id/bbOthers"
+        android:icon="@drawable/ic_others"
+        android:title="@string/menuother" />
+</menu>

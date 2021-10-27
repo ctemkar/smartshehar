@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtWaterElectricity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/waterelectricity"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_cat_one"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+
+            android:padding="5dp"
+            android:text="@string/water"
+            android:textColor="@color/light_maroon"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/WS"
+            style="@style/issue_item_text"
+            android:text="@string/WS" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/LWP"
+            style="@style/issue_item_text"
+            android:text="@string/LWP" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/LWL"
+            style="@style/issue_item_text"
+            android:text="@string/LWL" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/CWS"
+            style="@style/issue_item_text"
+            android:text="@string/CWS" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_cat_two"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtElectricity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:text="@string/electricity"
+            android:textColor="@color/light_maroon"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/IEC"
+            style="@style/issue_item_text"
+            android:text="@string/IEC" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/IES"
+            style="@style/issue_item_text"
+            android:text="@string/IES" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

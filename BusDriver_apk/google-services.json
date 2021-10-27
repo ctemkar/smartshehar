@@ -1,0 +1,153 @@
+{
+  "project_info": {
+    "project_id": "stone-dispatch-786",
+    "project_number": "784677467274",
+    "name": "jijo-apk-user"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:e1b75d9211cbc213",
+        "client_id": "android:com.jumpinjumpout.apk",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784677467274-51iokfcmh47fp7m5a028penmve0279ri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jumpinjumpout.apk",
+            "certificate_hash": "D842C0132C0EC520197D6824221B9C3D3EDBC69C"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:e76b0a39618d0e6b",
+        "client_id": "android:com.jumpinjumpout.apk.driver",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:ced70a4a43193f6b",
+        "client_id": "android:com.jumpinjumpout.apk.user.ui",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk.user.ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784677467274:android:117fffab6a9f7590",
+        "client_id": "android:com.jumpinjumpout.apk.alpha",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.jumpinjumpout.apk.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784677467274-il6hcfd26kkvtvgs2lma7j0p5tju5dma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jumpinjumpout.apk.alpha",
+            "certificate_hash": "D842C0132C0EC520197D6824221B9C3D3EDBC69C"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

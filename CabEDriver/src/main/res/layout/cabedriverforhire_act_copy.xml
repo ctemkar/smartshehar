@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/abstract_map_lib_act" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEndTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ripple_background_red"
+            android:padding="5dp"
+            android:text="@string/end_trip_cabe"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

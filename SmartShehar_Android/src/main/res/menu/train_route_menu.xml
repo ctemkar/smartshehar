@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_location"
+        android:icon="@mipmap/ic_gps_white"
+        android:orderInCategory="1"
+        android:title="@string/refreshLocation"
+        yourapp:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/menu_fare"
+        android:icon="@mipmap/ic_rupee"
+        android:orderInCategory="2"
+        android:title="@string/menu_fare"
+        yourapp:showAsAction="always|collapseActionView"/>
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@mipmap/ic_refresh"
+        android:orderInCategory="3"
+        android:title="@string/menu_refresh"
+        yourapp:showAsAction="always|collapseActionView" />
+
+</menu>

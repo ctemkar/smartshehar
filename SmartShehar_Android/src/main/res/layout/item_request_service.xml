@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtRequestService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/requestservice"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_cat_one"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/FG"
+            style="@style/issue_item_text"
+            android:text="@string/FG" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/TT"
+            style="@style/issue_item_text"
+            android:text="@string/TT" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/SC"
+            style="@style/issue_item_text"
+            android:text="@string/SC" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="ga_trackingId">UA-32381506-7</string>
+
+    <!--Enable automatic activity tracking-->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--Enable automatic exception tracking-->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <bool name="ga_debug">true</bool>
+    <string name="in.bestbus.app.ui.ActBusDashboard">Bus Dashboard</string>
+    <string name="in.bestbus.app.ui.ActFindBus">Find Bus</string>
+    <string name="in.bestbus.app.ui.ActBusRoute">Bus No</string>
+    <string name="in.bestbus.app.ui.ActNearStopsMap">Near Stops Map</string>
+    <string name="in.bestbus.app.ui.ActWalkToStop">Walk to Stop</string>
+</resources>

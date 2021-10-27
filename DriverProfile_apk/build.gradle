@@ -1,0 +1,51 @@
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    useLibrary 'org.apache.http.legacy'
+
+
+    signingConfigs {
+        debug {
+            storeFile file('./debug.keystore')
+        }
+    }
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://repo.commonsware.com.s3.amazonaws.com"
+        }
+    }
+    defaultConfig {
+        applicationId "com.jumpinjumpout.www.driverprofile"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 20
+
+    }
+    flavorDimensions "default"
+    productFlavors {
+        alpha {
+            applicationId "com.jumpinjumpout.www.driverprofile.alpha"
+            resValue "string", "google_maps_api_key", "AIzaSyDTVmbBaztRREPU7JlXY1nbN0zPQZJf29U"
+            resValue "string", "app_name", "α DriverProfile"
+            versionName "1.02.08 alpha"
+        }
+        rel {
+            applicationId "com.jumpinjumpout.www.driverprofile"
+            resValue "string", "google_maps_api_key", "AIzaSyDTVmbBaztRREPU7JlXY1nbN0zPQZJf29U"
+            resValue "string", "app_name", "DriverProfile"
+            versionName "1.02.08"
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':smartsheharlib')
+
+}
+

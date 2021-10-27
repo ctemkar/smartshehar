@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    tools:context="com.smartshehar.dashboard.app.ui.ActFollowupForm">
+    <item
+        android:id="@+id/refreshFollowupForm"
+        android:icon="@mipmap/ic_refresh"
+        android:title="@string/menu_refresh"
+        yourapp:showAsAction="always|collapseActionView" />
+</menu>

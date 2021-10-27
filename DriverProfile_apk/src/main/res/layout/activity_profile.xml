@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:contentDescription="@string/header"
+            android:src="@mipmap/ic_header" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svPersonl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:visibility="visible">
+
+        <include layout="@layout/personal_info" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/svProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+
+        <include layout="@layout/driver_profile" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/svRequirement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+
+        <include layout="@layout/requirment" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/svPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+
+        <include layout="@layout/photo" />
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BackgroundDark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtPersonal"
+            style="@style/tabText"
+            android:background="@drawable/frame_selected"
+            android:text="@string/personal_info" />
+
+
+        <TextView
+            android:id="@+id/txtDriving"
+            style="@style/tabText"
+            android:background="@drawable/thin_frame"
+            android:text="@string/driving_profile" />
+
+        <TextView
+            android:id="@+id/txtRequirement"
+            style="@style/tabText"
+            android:background="@drawable/thin_frame"
+            android:text="@string/requirement" />
+
+        <TextView
+            android:id="@+id/txtPhoto"
+            style="@style/tabText"
+            android:background="@drawable/thin_frame"
+            android:text="@string/photo" />
+    </LinearLayout>
+</LinearLayout>
+</FrameLayout>

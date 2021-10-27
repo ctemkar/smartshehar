@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/abstract_map_lib_act" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ripple_background"
+            android:padding="5dp"
+            android:text="@string/start_cabe"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnStart"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ripple_background"
+            android:padding="5dp"
+            android:text="@string/cancel_cabe"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/ivZoomRequestDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickZoomRequestDriver"
+
+            android:src="@mipmap/ic_zoom_active_users"
+            android:visibility="visible"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/ivZoomDriverVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/btnStart"
+            android:onClick="onClickZoomDriverVehicle"
+            android:src="@mipmap/ic_car"
+            android:visibility="visible"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/ivPassengerList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivZoomDriverVehicle"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickPassengerList"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_passenger_list"
+            android:visibility="visible"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/passengerinformation_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp" />
+</android.support.design.widget.CoordinatorLayout>

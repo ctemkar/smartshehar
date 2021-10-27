@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_text"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/tvTripDriverName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000000" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ivDriverImageShow"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_person"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTripDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvDriverCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTripDateTime"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvTripDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvTripFareRs"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tvTripFareRs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+    </RelativeLayout>
+</LinearLayout>

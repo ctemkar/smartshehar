@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- <Button
+         android:id="@+id/page"
+         style="@style/DashboardButton"
+         android:drawableTop="@drawable/ic_hail"
+         android:onClick="pageClicked"
+         android:text="@string/home_page"
+         android:visibility="gone" />-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/frame"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/meter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+         >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_meter"
+                android:text="@string/home_meter"
+                android:contentDescription="@string/home_meter" />
+
+            <TextView
+
+                android:text="@string/home_meter"
+                style="@style/TextView" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/farecalculator"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_calculator"
+                android:text="@string/home_farecalculator"
+                android:contentDescription="@string/home_farecalculator" />
+
+            <TextView
+
+                android:text="@string/home_farecalculator"
+                style="@style/TextView" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/estimatedfare"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+       >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_estimated_cost"
+                android:text="@string/home_estimatedfare"
+                android:contentDescription="@string/home_estimatedfare" />
+
+            <TextView
+
+                style="@style/TextView"
+                android:text="@string/home_estimatedfare"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+	

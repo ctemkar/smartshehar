@@ -1,0 +1,414 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etAdd_offence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:focusable="false"
+                    android:hint="@string/address"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etTime_offence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:focusable="false"
+                    android:hint="@string/time_offence"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/ivRecent"
+                    android:layout_toStartOf="@+id/ivRecent">
+
+                    <EditText
+                        android:id="@+id/txtTypeOffence"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="false"
+                        android:hint="@string/issue"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/ivRecent"
+                    android:layout_width="44dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_recent_list"
+                    android:contentDescription="@string/recent" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/takephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/takephoto"
+                android:textColor="@color/light_maroon"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/frame_border_photo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llFirstImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvSendingImageOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sendingimage"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/pbOne"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imgCancelRedOne"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/cancel"
+                            android:onClick="onClick"
+                            android:src="@mipmap/ic_cancelred"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivNoPlate"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/optional_image"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imgOne"
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/issue"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/splashscreen"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePicOne"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="@string/camera"
+                            android:onClick="onClick"
+                            android:padding="5dp"
+                            android:src="@mipmap/ic_camera" />
+
+                        <ImageView
+                            android:id="@+id/imgGalleryOne"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="@string/gallery"
+                            android:onClick="onClick"
+                            android:padding="5dp"
+                            android:src="@mipmap/ic_gallery" />
+
+                        <ImageView
+                            android:id="@+id/img_right"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="@string/more"
+                            android:padding="5dp"
+                            android:src="@mipmap/ic_right"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_secondeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvSendingImageTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sendingimage"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+
+                            android:id="@+id/pbTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imgCancelRedTwo"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/cancel"
+                            android:onClick="onClick"
+                            android:src="@mipmap/ic_cancelred"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/txtExtra"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/optional_image"
+                        android:src="@drawable/ic_additional_photo"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imgTwo"
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/issue"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/imgTakePicTwo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="@string/camera"
+                            android:onClick="onClick"
+                            android:padding="5dp"
+                            android:src="@mipmap/ic_camera" />
+
+                        <ImageView
+                            android:id="@+id/imgGalleryTwo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="@string/gallery"
+                            android:onClick="onClick"
+                            android:padding="5dp"
+                            android:src="@mipmap/ic_gallery" />
+
+                        <ImageView
+                            android:id="@+id/img_left"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:src="@mipmap/ic_left"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtWard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/wardno"
+                android:textColor="@color/whats_on_separator"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/tvWard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/changeWard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:text="@string/changeward"
+                android:textColor="@color/block_column_1"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlWard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/spinner_bg"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spnWardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:drawSelectorOnTop="true"
+                    android:dropDownVerticalOffset="-53dp"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/dropdown"
+                    android:src="@mipmap/ic_dop_down" />
+            </RelativeLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <lib.app.util.ClearableEditText
+                    android:id="@+id/etVehicleNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/vehicle_no"
+                    android:maxLines="2"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/pbSubmit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSubmitIssue"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/issue_ffd54f"
+                android:text="@string/positive_button"
+                android:textColor="@color/DarkGrey" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

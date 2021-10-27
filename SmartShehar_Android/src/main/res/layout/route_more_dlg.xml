@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/trainhomeScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/colorRowBold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFromTo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:singleLine="false"
+                android:textAppearance="@style/colorRowBold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLeg1a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:singleLine="false"
+                    android:text="Leg1a"
+                    android:textColor="#ff0D0001"
+                    android:textSize="18dp" />
+                <!--android:background="@color/light_green_1"-->
+
+                <TextView
+                    android:id="@+id/tvLeg1b"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:singleLine="false"
+                    android:text="Leg1b"
+                    android:textColor="#ff0D0001"
+                    android:textSize="18dp" />
+                <!--android:background="@color/light_green_1"-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/changeTrain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:singleLine="false"
+                android:textColor="#ff0D0001"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLeg2a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:singleLine="false"
+                    android:text="Leg2a"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+               <!-- android:background="@color/lemon_chiffon"-->
+                <TextView
+                    android:id="@+id/tvLeg2b"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:singleLine="false"
+                    android:text="Leg2b"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                <!--android:background="@color/lemon_chiffon"-->
+            </LinearLayout>
+        </LinearLayout>
+        <!--
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/hdr">
+
+            <Button
+                android:id="@+id/btnSMS"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_margin="30dp"
+                android:text="@string/sms" />
+
+            <Button
+                android:id="@+id/btnBack"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                   android:layout_margin="30dp"
+                android:text="@string/sback" />
+
+        </RelativeLayout>>
+         -->
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+</LinearLayout>
+    

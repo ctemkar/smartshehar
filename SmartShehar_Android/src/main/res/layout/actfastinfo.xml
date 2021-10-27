@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvGpsMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/SkyBlue"
+        android:gravity="center"
+        android:text="@string/gps_disabled_msg"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/trainhomeScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="0dip">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/autocomplete_startstation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/btnClear"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enterStartStation"
+                    android:maxWidth="200dip"
+                    android:minWidth="200dip"
+                    android:padding="2dp"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:text="@string/x"
+                android:textColor="#FF4900"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="0dip">
+
+                <TextView
+                    android:id="@+id/tvDisplayTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="22:00"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/tvDisplayTime"
+                    android:layout_toRightOf="@+id/tvDisplayTime"
+                    android:padding="10dp"
+                    android:text="@string/change_time"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/start_spinner"
+                    android:layout_width="35dip"
+                    android:layout_height="55dip"
+
+                    android:paddingLeft="2dip"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnRecentStations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="@string/recentTrips"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/locStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_rounded"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlTowards"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/royal_blue"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/towardsStation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/towardsStation"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnMerge"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/tabmerge32"
+                    android:contentDescription="@string/mergeTowards" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llRowTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/hdr"
+                android:colorBackground="#ffefd5"
+                android:orientation="horizontal"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip">
+
+                <TextView
+                    android:id="@+id/eta"
+                    style="@style/hdr"
+                    android:layout_width="78dip"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dip"
+                    android:text="@string/eta" />
+
+                <TextView
+                    android:id="@+id/speed"
+                    style="@style/hdr"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="@string/sloworfast" />
+
+                <TextView
+                    style="@style/hdr"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="@string/platform" />
+
+                <TextView
+                    style="@style/hdr"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="@string/line" />
+
+                <TextView
+                    style="@style/hdr"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="@string/carttl" />
+
+                <TextView
+                    style="@style/hdr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="@string/spl" />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/svTrainsAtStations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/tblTrainsAtStation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="100dp"></TableLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

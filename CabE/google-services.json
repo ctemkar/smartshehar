@@ -1,0 +1,243 @@
+{
+  "project_info": {
+    "project_number": "112962824223",
+    "project_id": "cabe-user-ss"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112962824223:android:244ea0756f66a911",
+        "android_client_info": {
+          "package_name": "com.smartshehar.cabe.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112962824223-vjufglve4ot8neu8vk3vl8juu21dcvjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartshehar.cabe.alpha",
+            "certificate_hash": "D842C0132C0EC520197D6824221B9C3D3EDBC69C"
+          }
+        },
+        {
+          "client_id": "112962824223-bomvpk39eiug726v3i875s7jsa27nq61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3YDb8BTbLrrS8f_9zMLKxE9BlFsduUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112962824223:android:4837b3be8f54f8b6",
+        "android_client_info": {
+          "package_name": "com.smartshehar.cabe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112962824223-6vtso61acuue5mpube2js40nfvsd8ku1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartshehar.cabe",
+            "certificate_hash": "3E5EFA0ECAB28E740DC1172EBDD6E035560E7B03"
+          }
+        },
+        {
+          "client_id": "112962824223-bomvpk39eiug726v3i875s7jsa27nq61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3YDb8BTbLrrS8f_9zMLKxE9BlFsduUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112962824223:android:fbc3fb4bb536d3e9",
+        "android_client_info": {
+          "package_name": "com.smartshehar.cabe.driver.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112962824223-u905er8ccbh2ufo7pb2dknlil3d9cl71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartshehar.cabe.driver.alpha",
+            "certificate_hash": "D842C0132C0EC520197D6824221B9C3D3EDBC69C"
+          }
+        },
+        {
+          "client_id": "112962824223-bomvpk39eiug726v3i875s7jsa27nq61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3YDb8BTbLrrS8f_9zMLKxE9BlFsduUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112962824223:android:6b460cced8232421",
+        "android_client_info": {
+          "package_name": "com.smartshehar.cabe.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112962824223-nrns8n9lfl87vu7ru6n63ojvsq2drlde.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartshehar.cabe.driver",
+            "certificate_hash": "3E5EFA0ECAB28E740DC1172EBDD6E035560E7B03"
+          }
+        },
+        {
+          "client_id": "112962824223-bomvpk39eiug726v3i875s7jsa27nq61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3YDb8BTbLrrS8f_9zMLKxE9BlFsduUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112962824223:android:c90064c71564fa08",
+        "android_client_info": {
+          "package_name": "com.smartshehar.cabe.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112962824223-e1pf6rae6u10v5rjnn61cod2urb8c7nq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartshehar.cabe.beta",
+            "certificate_hash": "3E5EFA0ECAB28E740DC1172EBDD6E035560E7B03"
+          }
+        },
+        {
+          "client_id": "112962824223-bomvpk39eiug726v3i875s7jsa27nq61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3YDb8BTbLrrS8f_9zMLKxE9BlFsduUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112962824223:android:9162669bc88a1fc8",
+        "android_client_info": {
+          "package_name": "com.smartshehar.cabe.driver.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112962824223-qam9ebnale347qreib3mhr8m1a3daevl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartshehar.cabe.driver.beta",
+            "certificate_hash": "3E5EFA0ECAB28E740DC1172EBDD6E035560E7B03"
+          }
+        },
+        {
+          "client_id": "112962824223-bomvpk39eiug726v3i875s7jsa27nq61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3YDb8BTbLrrS8f_9zMLKxE9BlFsduUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,276 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fmLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="110dp">
+
+        <LinearLayout
+            android:id="@+id/llOneLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvOneLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BackgroundLight"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/Black"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTwoLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvTwoLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BackgroundLight"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvTwoLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BackgroundLight"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/Black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llThreeLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvThreeLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BackgroundLight"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvThreeLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BackgroundLight"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text=""
+                android:textColor="@color/Black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvThreeLine3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BackgroundLight"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text=""
+                android:textColor="@color/Black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPassengerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/BackgroundLight"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llWaitingPassenger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llPassenger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivPhoto"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_unknowuser"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInfoBandLine4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInfoBandLine1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvKmAway"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="km away"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvInfoBandLine2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tvInfoBandLine3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvMins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="min."
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llJoinPassenger"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/gray_background"
+            android:gravity="center"
+            android:onClick="onClickPassenger"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvJoinedCountNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="2dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvJoinedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivPassenger1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/passenger"
+                android:src="@mipmap/ic_passenger"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvJumpedInCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

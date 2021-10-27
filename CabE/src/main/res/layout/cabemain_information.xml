@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRequestCab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_background_border"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Black & Yellow-->
+            <LinearLayout
+                android:id="@+id/llBalckYellow"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/service_black_and_yellow"
+                    android:src="@mipmap/ic_black_yellow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/service_black_and_yellow"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvBYEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarBY"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BDBDBD" />
+            <!--Share Cab-->
+            <LinearLayout
+                android:id="@+id/llShareCab"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/share_cab"
+                    android:src="@mipmap/ic_share_cab" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/share_cab"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvShareCabEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarShareCab"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BDBDBD" />
+            <!--Cool Cab-->
+            <LinearLayout
+                android:id="@+id/llCoolCab"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/service_coolcab"
+                    android:src="@mipmap/ic_cool_cab" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/service_coolcab"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarCC"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvCCEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BDBDBD" />
+            <!--Fleet Cab-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llFleetTaxi"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/service_fleet_taxi"
+                    android:src="@mipmap/ic_fleet_taxi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/service_fleet_taxi"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvFTEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarFT"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BDBDBD" />
+            <!--Prime Cab-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llTaxiPrime"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/service_prime"
+                    android:src="@mipmap/ic_tourist_taxi_prime" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/service_prime"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTPEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarTP"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BDBDBD" />
+            <!--Non Prime Cab-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llTaxiNonPrime"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/service_standard"
+                    android:src="@mipmap/ic_standard" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/service_standard"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTOPEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarTOP"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BDBDBD" />
+            <!--Sanghini cab-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llSanghini"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/sanghini"
+                    android:src="@mipmap/ic_sanghini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/sanghini"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSanghiniEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarSanghini"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BDBDBD" />
+            <!--Rickshow-->
+            <LinearLayout
+                android:id="@+id/llRickshaw"
+                android:layout_width="@dimen/service_type_width"
+                android:layout_height="@dimen/service_type_height"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/service_type_image"
+                    android:layout_height="@dimen/service_type_image"
+                    android:contentDescription="@string/rickshaw"
+                    android:src="@mipmap/ic_rickshaw" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/rickshaw"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvRickshawEta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/no_cars"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarRickshaw"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD" />
+
+    <LinearLayout
+        android:id="@+id/llEstimatePayment"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvAddPayment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_doller"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/add_payment"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvPriceEstimate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_doller"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/price_estimate"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRequestCab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cabe_request"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

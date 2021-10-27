@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp">
+
+    <LinearLayout
+        android:id="@+id/llNearLoaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Issues near by"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#28b54c" />
+
+        <TextView
+            android:id="@+id/tvNearByLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:hint="Getting location"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <view
+        android:id="@+id/recyclerView"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        />
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_refresh" android:visibility="gone"
+        android:layout_gravity="center" />
+
+</FrameLayout>
+

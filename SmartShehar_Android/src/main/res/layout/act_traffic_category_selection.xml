@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtPv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="5dp"
+            android:text="@string/parking_issue"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sub_cat_one"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="@string/illegalparking"
+                android:textColor="@color/light_maroon"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/PNPZ"
+                style="@style/issue_item_text"
+                android:text="@string/PNPZ" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/DP"
+                style="@style/issue_item_text"
+                android:text="@string/DP" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/PFGT"
+                style="@style/issue_item_text"
+                android:text="@string/PFGT" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/PFP"
+                style="@style/issue_item_text"
+                android:text="@string/PFP" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/OEPV"
+                style="@style/issue_item_text"
+                android:text="@string/OEPV" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/PBS"
+                style="@style/issue_item_text"
+                android:text="@string/PBS" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/PCO"
+                style="@style/issue_item_text"
+                android:text="@string/PCO" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/PRPS"
+                style="@style/issue_item_text"
+                android:text="@string/PRPS" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sub_cat_two"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtFootpath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="@string/illegalstoppage"
+                android:textColor="@color/light_maroon"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DRBT"
+                style="@style/issue_item_text"
+                android:text="@string/DRBT" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/SNSZ"
+                style="@style/issue_item_text"
+                android:text="@string/SNSZ" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/TBTM"
+                style="@style/issue_item_text"
+                android:text="@string/TBTM" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/VLMR"
+                style="@style/issue_item_text"
+                android:text="@string/VLMR" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMVT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" android:fontFamily="sans-serif"
+            android:text="@string/moving_issue"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sub_cat_two"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sub_cat_one"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:padding="5dp"
+                    android:text="@string/trafficruleviolation"
+                    android:textColor="@color/light_maroon"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/RD"
+                    style="@style/issue_item_text"
+                    android:text="@string/RD" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ab_background_focussed" />
+
+                <TextView
+                    android:id="@+id/SJ"
+                    style="@style/issue_item_text"
+                    android:text="@string/SJ" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ab_background_focussed" />
+
+                <TextView
+                    android:id="@+id/LC"
+                    style="@style/issue_item_text"
+                    android:text="@string/LC" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ab_background_focussed" />
+
+                <TextView
+                    android:id="@+id/IT"
+                    style="@style/issue_item_text"
+                    android:text="@string/IT" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ab_background_focussed" />
+
+                <TextView
+                    android:id="@+id/DAOW"
+                    style="@style/issue_item_text"
+                    android:text="@string/DAOW" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ab_background_focussed" />
+
+                <TextView
+                    android:id="@+id/OS"
+                    style="@style/issue_item_text"
+                    android:text="@string/OS" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ab_background_focussed" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtAN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="@string/airnoise"
+                android:textColor="@color/light_maroon"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MTSH"
+                style="@style/issue_item_text"
+                android:text="@string/MTSH" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/SE"
+                style="@style/issue_item_text"
+                android:text="@string/SE" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/DG"
+                style="@style/issue_item_text"
+                android:text="@string/DG" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/DN"
+                style="@style/issue_item_text"
+                android:text="@string/DN" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtRTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" android:fontFamily="sans-serif"
+            android:text="@string/regulartraffic"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sub_cat_one"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtRTJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="@string/regulartrafficjams"
+                android:textColor="@color/light_maroon"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TB"
+                style="@style/issue_item_text"
+                android:text="@string/TB" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/PD"
+                style="@style/issue_item_text"
+                android:text="@string/PD" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/IPV"
+                style="@style/issue_item_text"
+                android:text="@string/IPV" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sub_cat_two"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="@string/changerequest"
+                android:textColor="@color/light_maroon"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NPR"
+                style="@style/issue_item_text"
+                android:text="@string/NPR" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/NOWR"
+                style="@style/issue_item_text"
+                android:text="@string/NOWR" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/HV"
+                style="@style/issue_item_text"
+                android:text="@string/HV" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/SBRJ"
+                style="@style/issue_item_text"
+                android:text="@string/SBRJ" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" android:fontFamily="sans-serif"
+            android:text="@string/autotaxiRickshaw"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sub_cat_one"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtARP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="@string/regularproblem"
+                android:textColor="@color/light_maroon"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RP"
+                style="@style/issue_item_text"
+                android:text="@string/RP" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/RM"
+                style="@style/issue_item_text"
+                android:text="@string/RM" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/MHD"
+                style="@style/issue_item_text"
+                android:text="@string/MHD" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sub_cat_two"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtARPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="@string/badbehaviou"
+                android:textColor="@color/light_maroon"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RB"
+                style="@style/issue_item_text"
+                android:text="@string/RB" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/BTR"
+                style="@style/issue_item_text"
+                android:text="@string/BTR" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+
+            <TextView
+                android:id="@+id/BND"
+                style="@style/issue_item_text"
+                android:text="@string/BND" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/ab_background_focussed" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

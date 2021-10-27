@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="activity_titles">
+        <item>@string/title_activity_main</item>
+        <item>@string/title_activity_busno</item>
+        <item>@string/title_activity_bustrip</item>
+    </array>
+
+    <array name="activity_subtitles">
+        <item>@string/subtitle_activity_main</item>
+        <item>@string/subtitle_activity_busno</item>
+        <item>@string/subtitle_activity_bustrip</item>
+    </array>
+</resources>

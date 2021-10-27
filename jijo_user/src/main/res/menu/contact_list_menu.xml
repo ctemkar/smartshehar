@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@mipmap/ic_search"
+        android:title="@string/menu_search"
+        yourapp:actionViewClass="android.support.v7.widget.SearchView"
+        yourapp:showAsAction="always|collapseActionView" />
+
+
+    <item
+        android:id="@+id/menu_add_contact"
+        android:icon="@mipmap/ic_add_person"
+        android:title="@string/menu_add_contact" />
+
+</menu>

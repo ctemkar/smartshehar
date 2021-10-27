@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jumpinjumpout.apk"
+    android:installLocation="auto">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="${packageName}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${packageName}.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <application
+        android:name="com.jumpinjumpout.apk.user.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:textAllCaps="false"
+        android:theme="@style/MyTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.SplashScreen_act"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Dashboard_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.DashBoard_map"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name="lib.app.util.ui.ActFeedback"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name="com.jumpinjumpout.apk.lib.ui.VerifyPhone_act"
+            android:configChanges="keyboardHidden|orientation" />
+         <activity
+             android:name="com.jumpinjumpout.apk.lib.ui.SearchAddress_act"
+             android:configChanges="keyboardHidden|orientation"
+             android:theme="@android:style/Theme.Holo.Light" />
+
+        <!--<activity
+            android:name="com.jumpinjumpout.apk.lib.ui.MarathiAddress_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@android:style/Theme.Holo.Light" />-->
+
+        <activity
+            android:name=".lib.ui.ScheduleTripCreate_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.FriendPool_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Friend pool"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"/>
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.GetaCab_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.InviteUserToApp"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Notification_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Notifications"
+            android:launchMode="singleTop"
+            android:parentActivityName=".user.ui.Dashboard_act"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jumpinjumpout.apk.user.ui.Dashboard_act" />
+        </activity>
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.GetACabTrackDriver_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Track driver"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.DesignDemo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jumpinjumpout.apk.user.ui.Dashboard_act" />
+        </activity>
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.ShareTripTrackDriver_act"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Track driver"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.DesignDemo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jumpinjumpout.apk.user.ui.Dashboard_act" />
+        </activity>
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.NotificationDistance_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:label="Track driver"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.SearchGroup_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.LongDistanceCar_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.BookingSeat_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- Group All Activity -->
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.CommunityCreate_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.UpdateUserDetails_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppBaseThemeCamera"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.ContactsList_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Help_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Active_trips_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Find a ride"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.InviteUserToGroup"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.CommunityShowAll_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.ViewCommunity_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Settings_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Facebook_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- Group All Activity -->
+
+        <!-- Paytm Activity -->
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.FriendRequest_act"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Twitter_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".user.ui.TwitterHomePage_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.RecentTripUser_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".user.ui.TripHistoryList_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".user.ui.TripHistoryFullMap_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.GooglePlusLogin_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.FacebookLogin_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.UserAccountLoginSample_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.Act_WalkWithMe"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.ShareDriverLocationFriend"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.jumpinjumpout.apk.user.ui.MasterLoginUser_act"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- Services -->
+
+        <service android:name="com.jumpinjumpout.apk.user.LocationService_user"/>
+        <service
+            android:name="lib.app.util.FetchAddressIntentService"
+            android:exported="false" />
+
+        <receiver android:name="com.jumpinjumpout.apk.lib.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.jumpinjumpout.apk.user.UpdateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.jumpinjumpout.apk.user.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="${packageName}" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.jumpinjumpout.apk.user.GcmIntentService" />
+        <!-- Services -->
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.jumpinjumpout.apk" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.jumpinjumpout.apk.lib.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.jumpinjumpout.apk.lib.RegistrationIntentService"
+            android:exported="false"/>
+    </application>
+
+</manifest>
+

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:id="@+id/trainhomeScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="0dip">
+
+            <LinearLayout
+                android:id="@+id/llStartDest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="5dip"
+                android:background="#fff8dc"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlStartStop"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete_startstop"
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@color/BackgroundLight"
+                            android:dropDownWidth="220dp"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:hint="@string/startStopHint"
+                            android:imeOptions="actionNext"
+                            android:inputType="textMultiLine|textNoSuggestions"
+                            android:maxWidth="140dip"
+                            android:minWidth="140dip"
+                            android:padding="2dp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/tvDistamce"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2sp"
+                            android:layout_marginTop="2sp"
+                            android:layout_toRightOf="@+id/autocomplete_startstop"
+                            android:background="@color/white"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="2.3 km"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            tools:ignore="SelectableText,HardcodedText" />
+
+                        <Button
+                            android:id="@+id/btnClear"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right|top"
+                            android:layout_toRightOf="@+id/tvDistamce"
+                            android:text="@string/x"
+                            android:textColor="#FF4900"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:padding="2dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete_deststop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@color/BackgroundLight"
+                            android:dropDownWidth="260dp"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:hint="@string/startStopHint"
+                            android:imeOptions="actionNext"
+                            android:inputType="textMultiLine|textNoSuggestions"
+                            android:maxWidth="220dip"
+                            android:minWidth="220dip"
+                            android:padding="2dp"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnClearDest"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginRight="2dp"
+                            android:text="@string/x"
+                            android:textColor="#FF4900"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/btnRecentTrips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:padding="10dp"
+                        android:text="@string/recentTrips"
+                        android:textColor="#37001F"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnReverseTrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/btnRecentTrips"
+                        android:paddingLeft="15dp"
+                        android:text="@string/reverseTrip"
+                        android:textColor="#37001F"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnGoTrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/btnReverseTrip"
+                        android:drawablePadding="20dp"
+                        android:text="@string/go"
+                        android:textColor="#37001F"
+                        android:textStyle="bold"></Button>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/royal_blue"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/tvBusesToStation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2sp"
+                    android:layout_marginTop="2sp"
+                    android:background="@color/white"
+                    android:gravity="left|top"
+                    android:padding="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="SelectableText" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/decay"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="5dp"
+                android:text="@string/busesNearYou"
+                android:textAppearance="@style/hdr"
+                tools:ignore="SelectableText" />
+
+            <TableLayout
+                android:id="@+id/llArrivingBuses"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#000000"
+                android:visibility="gone"></TableLayout>
+
+            <TableLayout
+                android:id="@+id/tblBuseAtStopTable"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#000000"></TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

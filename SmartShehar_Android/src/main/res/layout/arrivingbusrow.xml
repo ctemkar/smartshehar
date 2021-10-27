@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llArivingBusRow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <TextView
+        android:id="@+id/tvArrivingBusNo"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:paddingLeft="2dp"
+        android:singleLine="false"
+        android:text="busno"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDestinationStop"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:fontFamily="monospace"
+        android:singleLine="false"
+        android:text="Destination"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvArrivingBusEta"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:fontFamily="monospace"
+        android:paddingLeft="2dp"
+        android:singleLine="false"
+        android:text="15 mins"
+        android:textSize="18sp" />
+</LinearLayout>
+

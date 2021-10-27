@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartshehar.customercalls.apk">
+
+    <uses-sdk tools:overrideLibrary="com.commonsware.cwac.cam2, com.github.clans.fab" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        android:required="true" />
+
+    <application
+        android:name=".CCApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ShowCustomer_act"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.CallPopup_act"
+            android:launchMode="singleInstance"
+            android:theme="@style/FloatingWindowActivity" />
+        <activity
+            android:name=".ui.EditCustomer_act"
+            android:launchMode="singleTop" />
+
+        <receiver android:name=".AnalyzeCall">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".CustomerCP"
+            android:authorities="com.smartshehar.customercalls.apk.customercp"
+            android:exported="false" />
+
+        <service
+            android:name=".SyncDataService"
+            android:enabled="true" />
+
+        <activity android:name=".ui.SyncDataActivity"></activity>
+    </application>
+
+</manifest>

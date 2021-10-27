@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtGpsOffMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/SkyBlue"
+        android:gravity="center"
+        android:text="@string/gps_disabled_msg"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dip"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/llStartStation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/autocomplete_startstation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enterStartStation"
+                    android:maxWidth="250dip"
+                    android:minWidth="250dip"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="@string/x"
+                android:textColor="#FF4900"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btnRecentStations"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@mipmap/ic_btn_round_more_normal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="2dp"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/start_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:paddingLeft="2dip"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/startStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:paddingLeft="4dp"
+                android:text="@string/gettingLocation"
+                android:textColor="#FFF4C1"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/autocomplete_deststation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/enterStartStation"
+                android:maxWidth="250dip"
+                android:minWidth="250dip"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnClearDest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/x"
+            android:textColor="#FF4900"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tlFare"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnGetFares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/getfares"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dip"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/line"
+                android:textAppearance="@style/colorRowBold" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/to"
+                android:textAppearance="@style/colorRowBold" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:padding="2dip"
+                android:text="@string/second"
+                android:textAppearance="@style/colorRowBold" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/first"
+                android:textAppearance="@style/colorRowBold" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:text="@string/second1m"
+                android:textAppearance="@style/colorRowBold" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/second3m"
+                android:textAppearance="@style/colorRowBold" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/first1m"
+                android:textAppearance="@style/colorRowBold" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="2dp"
+                android:text="@string/first3m"
+                android:textAppearance="@style/colorRowBold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_header" />
+
+            <ListView
+                android:id="@+id/farelist"
+                android:layout_width="372dp"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false"
+                android:visibility="visible" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

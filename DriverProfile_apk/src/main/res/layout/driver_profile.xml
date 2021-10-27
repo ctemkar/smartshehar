@@ -1,0 +1,452 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/permit"
+        android:drawableLeft="@mipmap/ic_star"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgPermit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rbPermitYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbPermitNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPermitNo"
+            style="@style/driverProfile"
+            android:hint="@string/permit_no"
+            android:inputType="text"
+            android:drawableLeft="@mipmap/ic_star"
+            android:visibility="gone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/badge"
+        android:drawableLeft="@mipmap/ic_star"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgBadge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rbBadgeYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbBadgeNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etBadgeNo"
+            style="@style/driverProfile"
+            android:hint="@string/badge_no"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="text"
+            android:visibility="gone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/stay_mumbai"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etStay"
+            style="@style/driverProfile"
+            android:hint="@string/years"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="number"
+            android:visibility="gone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/member"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkOLA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OLA"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkOLA">
+
+            <EditText
+                android:id="@+id/etOLAId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkUBR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/UBR"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkUBR">
+
+            <EditText
+                android:id="@+id/etUBRId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkMRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MRU"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkMRU">
+
+            <EditText
+                android:id="@+id/etMRUId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkBMC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BMC"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkBMC">
+
+            <EditText
+                android:id="@+id/etBMCId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkECA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ECA"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkECA">
+
+            <EditText
+                android:id="@+id/etECAId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkTAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TAB"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkTAB">
+
+            <EditText
+                android:id="@+id/etTABId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkTFS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TFS"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkTFS">
+
+            <EditText
+                android:id="@+id/etTFSId"
+                style="@style/driverProfile"
+
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkVIR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/VIR"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkVIR">
+
+            <EditText
+                android:id="@+id/etVIRId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkPRI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PRI"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkPRI">
+
+            <EditText
+                android:id="@+id/etPRIId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkARY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ARY"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkARY">
+
+            <EditText
+                android:id="@+id/etARYId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkBNY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BNY"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkBNY">
+
+            <EditText
+                android:id="@+id/etBNYId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkOTH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OTH"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkOTH">
+
+            <EditText
+                android:id="@+id/etOTHId"
+                style="@style/driverProfile"
+                android:hint="@string/id_no"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etEnterName"
+            style="@style/driverProfile"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:visibility="gone" />
+
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

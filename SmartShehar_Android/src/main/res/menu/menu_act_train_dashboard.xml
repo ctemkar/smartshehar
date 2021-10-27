@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@mipmap/ic_refresh"
+        android:title="@string/menu_refresh"
+        yourapp:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@mipmap/ic_action_share"
+        android:title="@string/menu_share"
+        yourapp:showAsAction="always|collapseActionView" />
+</menu>

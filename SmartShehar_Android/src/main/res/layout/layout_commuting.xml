@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCommuting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/internetErr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/transport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/dashboard_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/transport"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:contentDescription="@string/arrow"
+            android:src="@mipmap/ic_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/where_are_you_going"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTrain"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/ivIconTrain"
+            style="@style/SSDImageView"
+            android:contentDescription="@string/busDesc"
+            android:src="@drawable/ic_train_n" />
+
+        <TextView
+            android:id="@+id/tvTrainOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivIconTrain"
+            android:hint="@string/closest_train"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTrainTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTrainOne"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivIconTrain"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTrainThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTrainTwo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivIconTrain"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvTrainThree"
+            android:layout_toEndOf="@+id/ivIconTrain"
+            android:layout_toRightOf="@+id/ivIconTrain"
+            android:background="@color/default_text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBus"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/ivBus"
+            style="@style/SSDImageView"
+            android:contentDescription="@string/busDesc"
+            android:src="@drawable/ic_bus_n" />
+
+
+        <TextView
+            android:id="@+id/tvBusOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivBus"
+            android:hint="@string/closest_bus"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvBusTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBusOne"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivBus"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvBusThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBusTwo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivBus"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvBusThree"
+            android:layout_toEndOf="@+id/ivBus"
+            android:layout_toRightOf="@+id/ivBus"
+            android:background="@color/default_text_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAutoTaxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/ivAutoTaxi"
+            style="@style/SSDImageView"
+            android:contentDescription="@string/descAutoTaxi"
+            android:src="@drawable/ic_taxi_n" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/ivAutoTaxi"
+            android:layout_toEndOf="@+id/ivAutoTaxi"
+            android:layout_toRightOf="@+id/ivAutoTaxi"
+            android:background="@color/default_text_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvAEstFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/ivAutoTaxi"
+            android:layout_toRightOf="@+id/ivAutoTaxi"
+            android:hint="@string/estafare"
+            android:maxLines="2"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTEstFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvAEstFare"
+            android:layout_alignStart="@+id/tvAEstFare"
+            android:layout_below="@+id/tvAEstFare"
+            android:hint="@string/esttfare"
+            android:maxLines="2"
+            android:minLines="1"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

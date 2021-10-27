@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.smartshehar.customercalls.apk.alpha"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        alpha {
+            applicationId "com.smartshehar.customercalls.apk.alpha"
+            resValue "string", "app_name", "α Customer Calls"
+            versionName "0.00.56"
+            archivesBaseName = "CC-$versionName"
+        }
+        rel {
+            applicationId "com.smartshehar.customercalls.apk"
+            resValue "string", "app_name", "Customer Calls"
+            versionName "0.00.02"
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'junit:junit:4.12'
+    api project(':smartsheharlib')
+    api 'com.android.support:appcompat-v7:27.4.0'
+    api 'com.android.support:design:27.4.0'
+    api 'com.android.support:cardview-v7:27.4.0'
+    api 'com.android.support:recyclerview-v7:27.4.0'
+    api 'com.googlecode.libphonenumber:libphonenumber:8.9.13'
+    api 'com.android.support:support-v4:27.4.0'
+}

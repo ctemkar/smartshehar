@@ -1,0 +1,319 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/takephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@mipmap/ic_star"
+                android:text="@string/driver_photo"
+                android:textColor="@color/drak_green"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgCancelRedDriver"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/ic_cancelred"
+                    android:visibility="gone" />
+
+
+                <ImageView
+
+                    android:id="@+id/imgCameraDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_camera" />
+
+
+                <ImageView
+                    android:id="@+id/imgDriver"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/imgCameraDriver"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/driver_photo"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPan"
+            style="@style/driverProfile"
+            android:hint="@string/pan"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/pan_photo"
+                android:textColor="@color/drak_green"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgCancelRedPan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/ic_cancelred"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/imgPan"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/imgCameraPan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/driver_photo"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageView
+
+                    android:id="@+id/imgCameraPan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_camera" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etAadharNo"
+            style="@style/driverProfile"
+            android:hint="@string/driver_aadhar_no"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/aadhar_photo"
+                android:textColor="@color/drak_green"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgCancelRedAadhar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@mipmap/ic_cancelred"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/imgAadhar"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/imgCameraAadhar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/driver_photo"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageView
+
+                    android:id="@+id/imgCameraAadhar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_camera" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etLicenceNo"
+            style="@style/driverProfile"
+            android:hint="@string/driver_licence_no"
+            android:drawableLeft="@mipmap/ic_star"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etExpDate"
+            style="@style/driverProfile"
+            android:drawableLeft="@mipmap/ic_star"
+            android:hint="@string/exp_date"
+            android:drawableRight="@mipmap/ic_calendar"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/licence_photo"
+                android:drawableLeft="@mipmap/ic_star"
+                android:textColor="@color/drak_green"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgCancelRedLicence"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/imgLicence"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/imgCameraLicence"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/licence_photo"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageView
+
+                    android:id="@+id/imgCameraLicence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_camera" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

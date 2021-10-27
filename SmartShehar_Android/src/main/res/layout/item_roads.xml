@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtRoadF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/roads"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_cat_one"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtFootpath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:text="@string/footpath"
+            android:textColor="@color/light_maroon"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/MF"
+            style="@style/issue_item_text"
+            android:text="@string/MF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/UBF"
+            style="@style/issue_item_text"
+            android:text="@string/UBF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/UBP"
+            style="@style/issue_item_text"
+            android:text="@string/UBP" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/EF"
+            style="@style/issue_item_text"
+            android:text="@string/EF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/DLF"
+            style="@style/issue_item_text"
+            android:text="@string/DLF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_cat_two"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPotholes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:text="@string/potholes"
+            android:textColor="@color/light_maroon"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/POR"
+            style="@style/issue_item_text"
+            android:text="@string/POR" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/URS"
+            style="@style/issue_item_text"
+            android:text="@string/URS" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/DUR"
+            style="@style/issue_item_text"
+            android:text="@string/DUR" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+        <TextView
+            android:id="@+id/SRW"
+            style="@style/issue_item_text"
+            android:text="@string/SRW" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/ab_background_focussed" />
+
+    </LinearLayout>
+
+</LinearLayout>
